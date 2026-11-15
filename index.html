@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage de Tuborg & Yacine | 28 Novembre 2026 • Saint-Louis, Sénégal</title>
+  
+  <!-- Meta SEO & Social Sharing OpenGraph -->
+  <meta name="description" content="Tuborg & Yacine ont le plaisir de vous inviter à la célébration de leur union le samedi 28 novembre 2026 à l'Hôtel Keur Dada, Saint-Louis, Sénégal.">
+  <meta property="og:title" content="Mariage de Tuborg & Yacine | 28 Novembre 2026">
+  <meta property="og:description" content="Rejoignez-nous pour célébrer notre union à l'Hôtel Keur Dada, Saint-Louis, Sénégal. Découvrez le programme et confirmez votre présence en ligne.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0F382A">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Swiper.js CSS & JS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wedding: {
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#9C7A28',
+              emerald: '#0F382A',
+              emeraldDark: '#092219',
+              emeraldLight: '#18523E',
+              sand: '#FAF8F5',
+              sandAlt: '#F4EFEA',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            display: ['Cinzel', 'serif'],
+            script: ['Alex Brush', 'cursive'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-[#FAF8F5] text-gray-800 antialiased selection:bg-wedding-gold selection:text-white">
+
+  <!-- Audio Element Hidden -->
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="assets/audio/daman-bannex.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ========================================================
+       BARRE DE NAVIGATION FLOTTANTE
+       ======================================================== -->
+  <header id="main-navbar" class="fixed top-0 left-0 w-full z-50 navbar-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo / Monogramme des Mariés -->
+      <a href="#accueil" id="nav-logo-brand" class="group flex items-center space-x-3 cursor-pointer select-none">
+        <div class="w-11 h-11 rounded-full border border-wedding-gold/60 flex items-center justify-center bg-wedding-emerald/10 text-wedding-gold group-hover:bg-wedding-gold group-hover:text-wedding-emerald transition-all duration-300">
+          <span class="font-display font-bold text-lg">T&Y</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-semibold tracking-wider text-wedding-emerald">Tuborg & Yacine</span>
+          <span class="text-[10px] uppercase tracking-widest text-wedding-gold font-medium">28 Novembre 2026 • Saint-Louis</span>
+        </div>
+      </a>
+
+      <!-- Menu Liens Desktop -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+        <a href="#accueil" class="hover:text-wedding-gold transition-colors duration-200">Accueil</a>
+        <a href="#notre-histoire" class="hover:text-wedding-gold transition-colors duration-200">Notre Histoire</a>
+        <a href="#programme" class="hover:text-wedding-gold transition-colors duration-200">Programme</a>
+        <a href="#localisation" class="hover:text-wedding-gold transition-colors duration-200">Lieu & Accès</a>
+        <a href="#infos" class="hover:text-wedding-gold transition-colors duration-200">Infos Utiles</a>
+        <a href="#rsvp" class="btn-gold px-6 py-2.5 text-xs text-wedding-emerald font-bold tracking-wider">
+          Confirmer Présence
+        </a>
+      </nav>
+
+      <!-- Bouton Menu Mobile -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-wedding-emerald hover:text-wedding-gold focus:outline-none" aria-label="Ouvrir le menu">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+
+    <!-- Menu Déroulant Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-b border-wedding-gold/20 px-6 py-6 shadow-xl space-y-4">
+      <a href="#accueil" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Accueil</a>
+      <a href="#notre-histoire" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Notre Histoire</a>
+      <a href="#programme" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Programme de la journée</a>
+      <a href="#localisation" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Lieu & Accès (Hôtel Keur Dada)</a>
+      <a href="#infos" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Infos & Dress Code</a>
+      <a href="#rsvp" class="block w-full text-center btn-gold py-3 text-sm font-bold">
+        Confirmer ma présence (RSVP)
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       SECTION 1 : ACCUEIL / BANNIÈRE HÉRO & CARROUSEL D'IMAGES
+       ======================================================== -->
+  <section id="accueil" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    
+    <!-- Carrousel d'Images en Arrière-Plan (Swiper.js) -->
+    <div class="absolute inset-0 z-0">
+      <div class="swiper hero-swiper h-full w-full">
+        <div class="swiper-wrapper">
+          
+          <!-- Slide 1 : Couple Mariage Royal & Chaleureux -->
+          <div class="swiper-slide hero-slide">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Célébration de mariage" 
+                 class="hero-slide-img brightness-90">
+            <div class="hero-overlay absolute inset-0"></div>
+          </div>
+
+          <!-- Slide 2 : Ambiance Coucher de Soleil sur Saint-Louis -->
+          <div class="swiper-slide hero-slide">
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Saint-Louis fleuve Sénégal coucher de soleil" 
+                 class="hero-slide-img brightness-90">
+            <div class="hero-overlay absolute inset-0"></div>
+          </div>
+
+          <!-- Slide 3 : Table de Banquet & Décoration Florale Dorée -->
+          <div class="swiper-slide hero-slide">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Réception et banquet de mariage élégant" 
+                 class="hero-slide-img brightness-90">
+            <div class="hero-overlay absolute inset-0"></div>
+          </div>
+
+          <!-- Slide 4 : Alliances et Émotion -->
+          <div class="swiper-slide hero-slide">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Alliances et orfèvrerie de mariage" 
+                 class="hero-slide-img brightness-90">
+            <div class="hero-overlay absolute inset-0"></div>
+          </div>
+
+          <!-- Slide 5 : Fête, Joie & Soirée Dansante -->
+          <div class="swiper-slide hero-slide">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Soirée dansante et festivités" 
+                 class="hero-slide-img brightness-90">
+            <div class="hero-overlay absolute inset-0"></div>
+          </div>
+
+        </div>
+        <!-- Pagination Délicate -->
+        <div class="swiper-pagination !bottom-8"></div>
+      </div>
+    </div>
+
+    <!-- Contenu Central Hero -->
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white flex flex-col items-center">
+      
+      <!-- Couronne / Ornement Décoratif -->
+      <div class="inline-flex items-center space-x-3 mb-4 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-wedding-gold/40 text-wedding-goldLight">
+        <i data-lucide="sparkles" class="w-4 h-4 text-wedding-gold"></i>
+        <span class="text-xs uppercase tracking-widest font-semibold">Invitation Officielle</span>
+        <i data-lucide="sparkles" class="w-4 h-4 text-wedding-gold"></i>
+      </div>
+
+      <!-- Accroche Principale Spécifiée -->
+      <p class="font-serif italic text-xl sm:text-2xl lg:text-3xl font-light text-wedding-goldLight/95 max-w-2xl leading-relaxed mb-4 drop-shadow">
+        « Tuborg & Yacine ont le plaisir de vous inviter à la célébration de leur union »
+      </p>
+
+      <!-- Noms des Mariés en Titre Majeur -->
+      <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 uppercase drop-shadow-lg">
+        <span class="text-gold-gradient">Tuborg</span>
+        <span class="font-script lowercase text-4xl sm:text-6xl text-wedding-goldLight px-2">&</span>
+        <span class="text-gold-gradient">Yacine</span>
+      </h1>
+
+      <!-- Séparateur Stylisé -->
+      <div class="section-ornament !my-4">
+        <span class="ornament-line !w-16"></span>
+        <span class="ornament-diamond"></span>
+        <span class="ornament-line !w-16"></span>
+      </div>
+
+      <!-- Détails Immédiats Spécifiés -->
+      <div class="bg-black/35 backdrop-blur-md border border-wedding-gold/30 rounded-2xl px-6 py-4 my-6 inline-flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base font-medium shadow-2xl">
+        <div class="flex items-center space-x-2 text-wedding-goldLight">
+          <i data-lucide="calendar" class="w-5 h-5 text-wedding-gold"></i>
+          <span class="font-semibold text-white">28 Novembre 2026</span>
+        </div>
+        <span class="hidden sm:inline text-wedding-gold/40">•</span>
+        <div class="flex items-center space-x-2 text-wedding-goldLight">
+          <i data-lucide="clock" class="w-5 h-5 text-wedding-gold"></i>
+          <span class="font-semibold text-white">À partir de 17h00</span>
+        </div>
+        <span class="hidden sm:inline text-wedding-gold/40">•</span>
+        <div class="flex items-center space-x-2 text-wedding-goldLight">
+          <i data-lucide="map-pin" class="w-5 h-5 text-wedding-gold"></i>
+          <span class="font-semibold text-white">Hôtel Keur Dada, Saint-Louis</span>
+        </div>
+      </div>
+
+      <!-- Compte à Rebours (Countdown) -->
+      <div class="mb-8 w-full max-w-lg">
+        <p id="countdown-title" class="text-xs uppercase tracking-widest text-wedding-goldLight/80 mb-3 font-semibold">
+          Compte à rebours avant le grand jour
+        </p>
+        <div class="grid grid-cols-4 gap-3 sm:gap-4">
+          <div class="countdown-box">
+            <span id="count-days" class="block font-display text-2xl sm:text-4xl font-bold text-white">--</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-wedding-goldLight/90">Jours</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-hours" class="block font-display text-2xl sm:text-4xl font-bold text-white">--</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-wedding-goldLight/90">Heures</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-minutes" class="block font-display text-2xl sm:text-4xl font-bold text-white">--</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-wedding-goldLight/90">Min</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-seconds" class="block font-display text-2xl sm:text-4xl font-bold text-wedding-gold">--</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-wedding-goldLight/90">Sec</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boutons d'Action (CTA Spécifié) -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+        <a href="#rsvp" class="btn-gold px-8 py-4 text-sm sm:text-base font-bold shadow-2xl w-full sm:w-auto flex items-center justify-center space-x-2">
+          <span>Confirmer ma présence</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+        </a>
+        <a href="#programme" class="btn-outline-gold px-7 py-3.5 text-sm sm:text-base font-medium w-full sm:w-auto flex items-center justify-center space-x-2">
+          <i data-lucide="compass" class="w-4 h-4 mr-1"></i>
+          <span>Découvrir le programme</span>
+        </a>
+      </div>
+
+      <!-- Liens Calendrier Rapides -->
+      <div class="mt-8 flex items-center justify-center space-x-6 text-xs text-white/70">
+        <a id="btn-add-gcal" href="#" class="hover:text-wedding-gold transition-colors inline-flex items-center space-x-1.5">
+          <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+          <span>Ajouter à Google Agenda</span>
+        </a>
+        <span>|</span>
+        <a id="btn-download-ics" href="#" class="hover:text-wedding-gold transition-colors inline-flex items-center space-x-1.5">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Télécharger fichier (.ics / Apple)</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Indicateur de Défilement vers le bas -->
+    <a href="#notre-histoire" class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 text-white/60 hover:text-wedding-gold transition-colors animate-bounce p-2" aria-label="Défiler vers le bas">
+      <i data-lucide="chevron-down" class="w-6 h-6"></i>
+    </a>
+  </section>
+
+  <!-- ========================================================
+       SECTION : NOTRE HISTOIRE / MOT D'ACCUEIL DES MARIÉS
+       ======================================================== -->
+  <section id="notre-histoire" class="py-24 bg-white relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <span class="font-script text-4xl sm:text-5xl text-wedding-gold block mb-2">Bismillah</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mb-4">
+        Deux cœurs, une même destinée
+      </h2>
+
+      <div class="section-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond"></span>
+        <span class="ornament-line"></span>
+      </div>
+
+      <div class="prose prose-lg mx-auto text-gray-600 font-serif text-lg sm:text-xl leading-relaxed space-y-6 mt-8">
+        <p>
+          Chers parents, chers amis, chers proches venus d'ici et d'ailleurs,
+        </p>
+        <p>
+          C’est avec une immense joie et une vive émotion que nous franchissons ensemble cette étape sacrée de notre vie. 
+          Entourés de l'amour de nos familles et des bénédictions de nos aînés, nous avons choisi la ville tricentenaire 
+          et poétique de <strong>Saint-Louis (Ndar)</strong> pour sceller notre union.
+        </p>
+        <p class="italic text-wedding-emerald font-medium">
+          « Votre présence à nos côtés sera le plus beau témoignage de cette belle aventure que nous commençons à deux. 
+          Venez partager nos rires, nos danses, et célébrer la fête jusqu'au bout de la nuit ! »
+        </p>
+      </div>
+
+      <!-- Signatures élégantes -->
+      <div class="mt-12 flex items-center justify-center space-x-12">
+        <div class="text-center">
+          <span class="font-script text-4xl text-wedding-gold block">Tuborg</span>
+          <span class="text-xs uppercase tracking-widest text-gray-400 mt-1 block">Le Marié</span>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-wedding-sand flex items-center justify-center text-wedding-gold">
+          <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+        </div>
+        <div class="text-center">
+          <span class="font-script text-4xl text-wedding-gold block">Yacine</span>
+          <span class="text-xs uppercase tracking-widest text-gray-400 mt-1 block">La Mariée</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3 : LE DÉROULEMENT (TIMELINE INTERACTIVE)
+       Programme chronologique détaillé et moderne
+       ======================================================== -->
+  <section id="programme" class="py-24 bg-wedding-sand relative overflow-hidden">
+    
+    <!-- Décorations de fond douces -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-wedding-gold/5 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-wedding-emerald/5 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- En-tête de Section -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Le Déroulement</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
+          Le Programme de la Célébration
+        </h2>
+        <div class="section-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="text-gray-600 text-sm sm:text-base">
+          Voici le fil conducteur de notre magnifique journée du samedi 28 novembre 2026. Laissez-vous guider au rythme des festivités.
+        </p>
+      </div>
+
+      <!-- Conteneur Timeline Verticale Interactive -->
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Étape 1 : 17h00 - Accueil & Cocktail -->
+        <div class="timeline-item left">
+          <div class="timeline-badge">
+            <i data-lucide="glass-water" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
+              17h00
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Accueil des invités & Cocktail de bienvenue
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Arrivée des convives dans les jardins de l'Hôtel Keur Dada. Rafraîchissements, cocktails signature aux saveurs locales et premières retrouvailles musicales.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 2 : 18h00 - Cérémonie d'ouverture -->
+        <div class="timeline-item right">
+          <div class="timeline-badge">
+            <i data-lucide="crown" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
+              18h00
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Cérémonie d’ouverture
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Installation officielle des invités, introduction solennelle et prières de bénédiction pour placer l'union sous les plus auspices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 3 : 18h45 - Entrée des mariés -->
+        <div class="timeline-item left">
+          <div class="timeline-badge">
+            <i data-lucide="sparkles" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
+              18h45
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Entrée triomphale des mariés
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Accueil chaleureux de Tuborg & Yacine sous les ovations, chants traditionnels et roulements de tambours festifs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 4 : 19h15 - Discours & remerciements -->
+        <div class="timeline-item right">
+          <div class="timeline-badge">
+            <i data-lucide="mic" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
+              19h15
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Discours & remerciements
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mots d’amour, hommages des témoins et remerciements sincères des familles à l'assemblée.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 5 : 19h45 - Dîner -->
+        <div class="timeline-item left">
+          <div class="timeline-badge">
+            <i data-lucide="utensils" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
+              19h45
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Dîner gastronomique
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Service du grand banquet de noce. Un savoureux festin mêlant haute gastronomie et spécialités sénégalaises d'exception préparées par le chef.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 6 : 20h45 - Gâteau & première danse -->
+        <div class="timeline-item right">
+          <div class="timeline-badge">
+            <i data-lucide="cake" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
+              20h45
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Gâteau & première danse
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Découpe de la pièce montée et ouverture du bal par les mariés pour un instant de romance et de poésie partagée.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 7 : 21h30 - Changement de tenue -->
+        <div class="timeline-item left">
+          <div class="timeline-badge">
+            <i data-lucide="shirt" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
+              21h30
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Changement de tenue
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Petite pause glamour. Les mariés revêtent leurs tenues de fête scintillantes pour lancer les grandes festivités dansantes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 8 : 22h00 - Soirée dansante DJ -->
+        <div class="timeline-item right">
+          <div class="timeline-badge">
+            <i data-lucide="music" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
+              22h00
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Soirée dansante (DJ – Animations – Ambiance)
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Piste de danse ouverte à tous ! Sets endiablés du DJ, surprises musicales, animations et ambiance survoltée sous les étoiles de Saint-Louis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 9 : 00h00 - Tenue traditionnelle & Danses -->
+        <div class="timeline-item left">
+          <div class="timeline-badge">
+            <i data-lucide="award" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
+              00h00
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Changement de tenue traditionnelle
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mise à l'honneur de nos racines et coutumes sénégalaises : somptueux Bazin & tenues traditionnelles, plateau d'honneur, partage et danses au son du sabar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 10 : 00h30 – 02h00 - Suite jusqu'au bout de la nuit -->
+        <div class="timeline-item right">
+          <div class="timeline-badge">
+            <i data-lucide="moon" class="w-5 h-5 text-wedding-gold"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
+              00h30 – 02h00
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
+              Suite de la soirée & célébration
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Célébration festive jusqu’au bout de la nuit pour immortaliser des souvenirs gravés à jamais dans nos mémoires.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bannière Rappel Heure -->
+      <div class="mt-16 text-center">
+        <p class="text-xs uppercase tracking-widest text-wedding-gold font-bold mb-2">Ponctualité appréciée</p>
+        <p class="text-gray-500 text-sm italic">
+          Merci d'arriver dès 17h00 afin de profiter pleinement de chaque moment de la célébration.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4 : LOCALISATION & ACCÈS (HÔTEL KEUR DADA)
+       Module Google Maps interactif et informations pratiques
+       ======================================================== -->
+  <section id="localisation" class="py-24 bg-white relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- En-tête de section -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Localisation</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
+          Le Lieu de Célébration
+        </h2>
+        <div class="section-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="text-gray-600 text-sm sm:text-base">
+          Nous vous donnons rendez-vous dans le cadre enchanteur et chaleureux de l'<strong>Hôtel Keur Dada</strong> à Saint-Louis.
+        </p>
+      </div>
+
+      <!-- Grille 2 Colonnes : Carte Google Maps + Détails d'Accès -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Colonne 1 : Module Google Maps Interactif -->
+        <div class="lg:col-span-7">
+          <div class="map-container relative aspect-[4/3] w-full">
+            <iframe 
+              title="Localisation Hôtel Keur Dada Saint-Louis"
+              src="https://maps.google.com/maps?q=Hotel+Keur+Dada+Saint-Louis+Senegal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-gray-500">
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span>Coordonnées GPS synchronisées</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <a href="https://maps.google.com/?q=Hotel+Keur+Dada+Saint-Louis+Senegal" target="_blank" rel="noopener noreferrer" class="text-wedding-emerald hover:text-wedding-gold font-semibold underline inline-flex items-center">
+                <span>Ouvrir dans Google Maps</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne 2 : Fiches Pratiques & Itinéraire -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Carte Lieu -->
+          <div class="p-6 rounded-2xl bg-wedding-sand border border-wedding-gold/25 shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-wedding-emerald text-wedding-gold flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-xl font-bold text-wedding-emerald">Hôtel Keur Dada</h3>
+                <p class="text-sm text-gray-600 mt-1">Saint-Louis (Ndar), Sénégal</p>
+                <p class="text-xs text-gray-500 mt-2 leading-relaxed">
+                  Un joyau niché au bord de l'eau, réputé pour son hospitalité légendaire (Teranga), ses jardins fleuris et son cadre magique au crépuscule.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte Itinéraire depuis Dakar -->
+          <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-wedding-gold/20 text-wedding-emerald flex items-center justify-center shrink-0">
+                <i data-lucide="car" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-lg font-bold text-gray-800">Venir depuis Dakar</h3>
+                <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+                  Prendre l’autoroute à péage (A1) vers Thiès, puis la Route Nationale 2 (RN2) en direction de Saint-Louis. Compter environ 3h30 à 4h00 de route.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte Stationnement & Sécurité -->
+          <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-wedding-gold/20 text-wedding-emerald flex items-center justify-center shrink-0">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-lg font-bold text-gray-800">Parking & Sécurité</h3>
+                <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+                  Un espace de stationnement gardé et sécurisé est entièrement dédié aux invités du mariage au sein de l'établissement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bouton Itinéraire Direct -->
+          <a href="https://maps.google.com/?q=Hotel+Keur+Dada+Saint-Louis+Senegal" target="_blank" rel="noopener noreferrer" class="btn-gold w-full py-3.5 text-xs uppercase tracking-wider font-bold">
+            <i data-lucide="navigation" class="w-4 h-4 mr-2"></i>
+            <span>Lancer l'itinéraire GPS</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION : INFORMATIONS UTILES & DRESS CODE
+       ======================================================== -->
+  <section id="infos" class="py-24 bg-wedding-sand relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Guide des Invités</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
+          Informations Pratiques
+        </h2>
+        <div class="section-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Dress Code -->
+        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sparkles" class="w-7 h-7 text-wedding-gold"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Dress Code</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Élégance Royale & Teranga</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Pour la première partie : Tenues de soirée chics et raffinées.<br>
+            À partir de minuit : Somptueux Bazin & Tenues traditionnelles sénégalaises.<br>
+            <em>Couleurs suggérées : Or, Vert Émeraude, Blanc & Champagne.</em>
+          </p>
+        </div>
+
+        <!-- Hébergements à Saint-Louis -->
+        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hotel" class="w-7 h-7 text-wedding-gold"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Hébergement</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Saint-Louis & Alentours</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Des chambres sont disponibles à l'Hôtel Keur Dada ainsi que dans les charmants hôtels coloniaux de l'Île de Saint-Louis (Hôtel de la Poste, Mermoz, Cap Saint-Louis). Nous vous conseillons de réserver tôt.
+          </p>
+        </div>
+
+        <!-- Enfants & Organisation -->
+        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="heart-handshake" class="w-7 h-7 text-wedding-gold"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Cadeaux & Vœux</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Votre Présence est un Don</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Le plus beau des cadeaux reste votre présence et vos bénédictions. Une urne nuptiale sera élégamment disposée à l'accueil pour ceux qui désirent contribuer à notre voyage de noces.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5 : FORMULAIRE RSVP (MODULE DE CONFIRMATION)
+       Texte d'intro, champs obligatoires et gestion automatisée
+       ======================================================== -->
+  <section id="rsvp" class="py-24 bg-wedding-emerald relative text-white">
+    
+    <!-- Décorations lumineuses en fond -->
+    <div class="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+    
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- En-tête de section -->
+      <div class="text-center mb-12">
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-goldLight">Réponse Souhaitée</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-3">
+          Confirmez Votre Présence
+        </h2>
+        
+        <div class="section-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+
+        <!-- Texte d'introduction officiel spécifié -->
+        <p class="text-wedding-goldLight/90 text-base sm:text-lg max-w-xl mx-auto mt-4 font-light">
+          « Confirmez votre présence. Merci de nous répondre pour que nous puissions prévoir votre place. »
+        </p>
+        <p class="text-xs text-wedding-goldLight/60 mt-1 uppercase tracking-wider">
+          Date limite de confirmation souhaitée : 1er Novembre 2026
+        </p>
+      </div>
+
+      <!-- Carte Formulaire RSVP -->
+      <div class="rsvp-card p-6 sm:p-10 text-gray-800">
+        <form id="rsvp-form" class="space-y-6">
+          
+          <!-- Champ 1 : Nom & Prénom (Obligatoire) -->
+          <div>
+            <label for="rsvp-fullname" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+              Nom & Prénom <span class="text-red-500">*</span>
+            </label>
+            <div class="relative">
+              <input 
+                type="text" 
+                id="rsvp-fullname" 
+                name="nom_complet" 
+                required 
+                placeholder="Ex : Aminata Diop" 
+                class="form-input pl-11">
+              <i data-lucide="user" class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            </div>
+          </div>
+
+          <!-- Champ 2 : Présence (Obligatoire : Oui / Non) -->
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+              Serez-vous des nôtres ? <span class="text-red-500">*</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- Option Oui -->
+              <div>
+                <input type="radio" id="presence-oui" name="presence" value="oui" checked class="hidden peer">
+                <label for="presence-oui" class="attendance-radio-label">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-wedding-gold mr-2"></i>
+                  <span>✨ Oui, avec grand plaisir !</span>
+                </label>
+              </div>
+
+              <!-- Option Non -->
+              <div>
+                <input type="radio" id="presence-non" name="presence" value="non" class="hidden peer">
+                <label for="presence-non" class="attendance-radio-label">
+                  <i data-lucide="x-circle" class="w-5 h-5 text-gray-400 mr-2"></i>
+                  <span>💐 Non, avec regret</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bloc conditionnel si Présence = OUI -->
+          <div id="plus-one-section" class="space-y-6 transition-all duration-300">
+            
+            <!-- Champ 3 : Nombre d'accompagnants (Obligatoire) -->
+            <div>
+              <label for="nb-accompagnants" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+                Nombre d'accompagnants <span class="text-red-500">*</span>
+              </label>
+              <div class="relative">
+                <select id="nb-accompagnants" name="nombre_accompagnants" class="form-input pl-11 appearance-none cursor-pointer">
+                  <option value="0">Je viens seul(e) (0 accompagnant)</option>
+                  <option value="1">+ 1 personne (en couple / duo)</option>
+                  <option value="2">+ 2 personnes</option>
+                  <option value="3">+ 3 personnes ou famille</option>
+                </select>
+                <i data-lucide="users" class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              </div>
+            </div>
+
+            <!-- Champ Précision Noms des accompagnants (Dynamique) -->
+            <div id="companions-names-container" class="hidden">
+              <label for="rsvp-companions-names" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+                Prénom & Nom du ou des accompagnant(s)
+              </label>
+              <input 
+                type="text" 
+                id="rsvp-companions-names" 
+                name="noms_accompagnants" 
+                placeholder="Ex : Mariama Sall, Modou Fall..." 
+                class="form-input">
+            </div>
+
+            <!-- Téléphone / WhatsApp -->
+            <div>
+              <label for="rsvp-phone" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+                Numéro WhatsApp / Téléphone
+              </label>
+              <div class="relative">
+                <input 
+                  type="tel" 
+                  id="rsvp-phone" 
+                  name="telephone" 
+                  placeholder="Ex : +221 77 000 00 00" 
+                  class="form-input pl-11">
+                <i data-lucide="phone" class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+              </div>
+            </div>
+
+            <!-- Régimes alimentaires / Allergies -->
+            <div>
+              <label for="rsvp-diet" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+                Préférences de table / Allergies éventuelles
+              </label>
+              <div class="relative">
+                <select id="rsvp-diet" name="regime" class="form-input pl-11 appearance-none cursor-pointer">
+                  <option value="aucun">Aucune restriction particulière</option>
+                  <option value="vegetarien">Menu Végétarien</option>
+                  <option value="sans-fruits-de-mer">Sans fruits de mer / crustacés</option>
+                  <option value="sans-arachides">Sans arachides</option>
+                  <option value="autre">Autre (préciser dans le message)</option>
+                </select>
+                <i data-lucide="utensils-crossed" class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Champ : Mot d'amour / Message aux mariés -->
+          <div>
+            <label for="rsvp-message" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+              Un petit mot pour Tuborg & Yacine (Optionnel)
+            </label>
+            <textarea 
+              id="rsvp-message" 
+              name="message" 
+              rows="3" 
+              placeholder="Vos vœux de bonheur, bénédictions ou une petite chanson que vous aimeriez entendre..." 
+              class="form-input"></textarea>
+          </div>
+
+          <!-- Notification WhatsApp Directe -->
+          <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-start space-x-3">
+            <div class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-emerald-900">Confirmation WhatsApp Directe pour le Marié</p>
+              <p class="text-[11px] text-gray-600 mt-0.5">
+                À la validation, un message complet sera automatiquement préparé pour être transmis à <strong>Tuborg (+221 77 618 51 00)</strong> et <strong>+221 77 176 09 06</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bouton de Soumission -->
+          <div class="pt-2">
+            <button 
+              type="submit" 
+              id="rsvp-submit-btn" 
+              class="btn-gold w-full py-4 text-base font-bold tracking-wider shadow-xl">
+              <span>Confirmer ma réponse</span>
+            </button>
+          </div>
+
+          <p class="text-center text-[11px] text-gray-400 pt-2">
+            🔒 Vos coordonnées restent strictement confidentielles et ne seront utilisées que pour l'organisation de l'événement.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PIED DE PAGE (FOOTER)
+       ======================================================== -->
+  <footer class="bg-wedding-emeraldDark text-white py-16 border-t border-wedding-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- Monogramme Footer -->
+      <div class="w-16 h-16 rounded-full border border-wedding-gold/40 flex items-center justify-center mx-auto mb-4 bg-wedding-gold/10">
+        <span class="font-display font-bold text-2xl text-wedding-gold">T&Y</span>
+      </div>
+
+      <h2 class="font-serif text-3xl font-semibold tracking-wide text-wedding-goldLight">
+        Tuborg & Yacine
+      </h2>
+
+      <p class="text-xs uppercase tracking-widest text-wedding-gold mt-1 mb-6">
+        Samedi 28 Novembre 2026 • Hôtel Keur Dada, Saint-Louis (Sénégal)
+      </p>
+
+      <div class="section-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond"></span>
+        <span class="ornament-line"></span>
+      </div>
+
+      <p class="font-script text-3xl text-wedding-goldLight/90 mt-4">
+        « Nioune Ak Yéne, Ndar thi Kaw ! »
+      </p>
+
+      <p class="text-xs text-gray-400 mt-8">
+        © 2026 Mariage Tuborg & Yacine. Fait avec amour pour célébrer l'union éternelle.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       SECTION 2 : LECTEUR AUDIO FLOTTANT (AMBIANCE SONORE)
+       Morceau : "Daman Bannex" (de la troupe Obree Daman)
+       ======================================================== -->
+  <aside class="audio-player-pill" aria-label="Lecteur audio d'ambiance musicale">
+    
+    <!-- Disque vinyle tournant -->
+    <div id="vinyl-disc" class="vinyl-disc">
+      <div class="w-2.5 h-2.5 rounded-full bg-wedding-gold"></div>
+    </div>
+
+    <!-- Info Morceau -->
+    <div class="flex flex-col text-left pr-2">
+      <span class="text-[10px] uppercase tracking-wider text-wedding-gold font-bold">Ambiance Sonore</span>
+      <span class="text-xs font-semibold text-white truncate max-w-[150px] sm:max-w-[190px]">
+        Daman Bannex — Obree Daman
+      </span>
+    </div>
+
+    <!-- Égaliseur Barres Animées -->
+    <div id="audio-equalizer" class="equalizer">
+      <span class="equalizer-bar"></span>
+      <span class="equalizer-bar"></span>
+      <span class="equalizer-bar"></span>
+      <span class="equalizer-bar"></span>
+    </div>
+
+    <!-- Boutons de Contrôle : Play / Pause & Mute -->
+    <div class="flex items-center space-x-1 pl-1">
+      <button id="audio-play-btn" class="w-8 h-8 rounded-full bg-wedding-gold text-wedding-emerald flex items-center justify-center hover:scale-105 transition-transform" aria-label="Lancer la musique">
+        <i data-lucide="play" id="play-icon" class="w-4 h-4 fill-current ml-0.5"></i>
+        <i data-lucide="pause" id="pause-icon" class="w-4 h-4 fill-current hidden"></i>
+      </button>
+
+      <button id="audio-mute-btn" class="w-8 h-8 rounded-full hover:bg-white/10 text-wedding-gold flex items-center justify-center transition-colors" aria-label="Couper ou activer le son">
+        <i data-lucide="volume-2" id="volume-icon" class="w-4 h-4"></i>
+        <i data-lucide="volume-x" id="mute-icon" class="w-4 h-4 hidden text-red-400"></i>
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- Toast Notification / Invitation Musicale Non Intrusive -->
+  <div id="music-prompt-toast" class="music-prompt-toast hidden">
+    <div class="flex items-start space-x-3">
+      <div class="p-2 rounded-full bg-wedding-gold/20 text-wedding-gold shrink-0">
+        <i data-lucide="music-2" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-1">
+        <p class="text-xs uppercase tracking-wider text-wedding-gold font-bold">Bienvenue au Mariage</p>
+        <p class="text-xs text-gray-200 mt-1 leading-snug">
+          Souhaitez-vous écouter la musique traditionnelle d'accueil <strong>« Daman Bannex »</strong> ?
+        </p>
+        <div class="mt-3 flex items-center space-x-3">
+          <button id="accept-music-btn" class="px-4 py-1.5 rounded-full bg-wedding-gold text-wedding-emerald font-bold text-xs hover:bg-white transition-colors">
+            Oui, écouter 🎵
+          </button>
+          <button id="close-music-toast-btn" class="text-xs text-gray-400 hover:text-white transition-colors">
+            Plus tard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bouton Remonter en Haut -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Remonter en haut de page">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- ========================================================
+       MODAL DE SUCCÈS RSVP (CONFIRMATION FESTIVE)
+       ======================================================== -->
+  <div id="rsvp-success-modal" class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-md">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl border border-wedding-gold/40 relative transform transition-all animate-bounce-short">
+      
+      <!-- Icône festive dorée -->
+      <div class="w-20 h-20 rounded-full bg-wedding-gold/15 text-wedding-gold border-2 border-wedding-gold flex items-center justify-center mx-auto mb-4 shadow-lg">
+        <i data-lucide="heart" class="w-10 h-10 fill-current"></i>
+      </div>
+
+      <h3 class="font-serif text-3xl font-bold text-wedding-emerald">
+        Merci infiniment !
+      </h3>
+      
+      <p class="font-serif italic text-lg text-wedding-gold mt-1" id="success-guest-name">
+        Votre réponse a bien été enregistrée
+      </p>
+
+      <div class="my-5 p-4 rounded-2xl bg-wedding-sand border border-wedding-gold/20" id="success-summary-text">
+        <!-- Rempli dynamiquement en JS -->
+      </div>
+
+      <!-- Bloc Transmission WhatsApp Directe -->
+      <div class="my-5 p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 text-left">
+        <p class="text-xs uppercase tracking-wider text-emerald-950 font-bold mb-1.5 flex items-center space-x-1.5">
+          <svg class="w-4 h-4 fill-[#25D366] shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Transmettre votre confirmation par WhatsApp :</span>
+        </p>
+        <p class="text-[11px] text-gray-600 mb-3">
+          Le message complet est déjà prêt, il ne vous reste qu'à cliquer pour l'envoyer directement :
+        </p>
+        <div class="space-y-2">
+          <a id="whatsapp-btn-groom" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full py-2.5 px-3 text-xs font-bold shadow-sm flex items-center justify-center space-x-2">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Envoyer à Tuborg (+221 77 618 51 00)</span>
+          </a>
+          <a id="whatsapp-btn-coord" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full py-2.5 px-3 text-xs font-bold shadow-sm flex items-center justify-center space-x-2 !bg-[#128C7E] hover:!bg-[#075E54]">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Envoyer au second numéro (+221 77 176 09 06)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-3 pt-2">
+        <a href="#" onclick="downloadICalFile(); return false;" class="btn-gold w-full py-3 text-xs uppercase tracking-wider font-bold">
+          <i data-lucide="calendar-check" class="w-4 h-4 mr-1.5"></i>
+          <span>Enregistrer dans mon calendrier</span>
+        </a>
+        <button id="close-success-modal-btn" class="w-full py-2.5 text-xs text-gray-500 hover:text-gray-800 font-semibold transition-colors">
+          Fermer cette fenêtre
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL DASHBOARD SECRET RSVP (POUR LES MARIÉS)
+       Raccourci : Ctrl + Shift + R ou 5 clics sur le logo T&Y
+       ======================================================== -->
+  <div id="admin-rsvp-modal" class="fixed inset-0 z-[1010] hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
+    <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden border border-wedding-gold/40">
+      
+      <!-- Header Admin -->
+      <div class="px-6 py-4 bg-wedding-emerald text-white flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <i data-lucide="users" class="w-5 h-5 text-wedding-gold"></i>
+          <div>
+            <h3 class="font-serif text-xl font-bold">Liste des Réponses RSVP (Gestion Mariés)</h3>
+            <span id="admin-total-guests" class="text-xs text-wedding-goldLight">Calcul des présences en cours...</span>
+          </div>
+        </div>
+        <button id="close-admin-modal-btn" class="p-1 rounded-lg text-gray-300 hover:text-white" aria-label="Fermer le tableau de bord">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Contenu Tableau -->
+      <div class="p-6 overflow-y-auto flex-1">
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <table class="min-w-full divide-y divide-gray-200 text-left">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Date</th>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Nom & Prénom</th>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Statut</th>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Accompagnants</th>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Téléphone</th>
+                <th class="px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">Message</th>
+              </tr>
+            </thead>
+            <tbody id="admin-rsvp-tbody" class="divide-y divide-gray-100">
+              <!-- Rempli en JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer Admin Actions -->
+      <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex flex-wrap items-center justify-between gap-4">
+        <span class="text-xs text-gray-500 italic">
+          💡 Astuce : Les données sont stockées en toute sécurité sur ce navigateur et peuvent être synchronisées avec Google Sheets.
+        </span>
+        <div class="flex items-center space-x-3">
+          <button id="clear-rsvp-data-btn" class="px-4 py-2 rounded-lg text-xs font-semibold text-red-600 hover:bg-red-50 transition-colors">
+            Effacer les données
+          </button>
+          <button id="export-csv-btn" class="btn-gold px-5 py-2 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="download" class="w-4 h-4 mr-1.5"></i>
+            <span>Télécharger Excel / CSV</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/rsvp.js"></script>
+  <script>
+    // Initialisation des icônes Lucide
+    lucide.createIcons();
+  </script>
+</body>
+</html>
