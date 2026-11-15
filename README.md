@@ -21,14 +21,14 @@ Il propose une expérience immersive aux couleurs du Sénégal (Or Impérial, Ve
 - **Bouton d'action CTA** : *« Confirmer ma présence »* avec défilement fluide vers le formulaire RSVP.
 - **Boutons Agenda** : Synchronisation en 1 clic avec **Google Agenda** et téléchargement du fichier **.ics (Apple / Outlook)**.
 
-### 2. Ambiance Sonore Intégrée (Daman Bannex)
-- **Morceau traditionnel** : *« Daman Bannex »* (de la troupe Obree Daman).
+### 2. Ambiance Sonore Intégrée (Obree Daman - Banneex)
+- **Morceau traditionnel** : *« Obree Daman - Banneex »*.
 - **Lecteur audio flottant & discret** :
   - Disque vinyle rotatif doré.
   - Bouton Play / Pause interactif.
   - Bouton Mute / Unmute & égaliseur animé (barres spectrales).
   - Respect strict des politiques d'autoplay des navigateurs avec toast délicat d'invitation d'écoute.
-  - **Synthétiseur acoustique Kora de secours (Web Audio API)** : Si aucun fichier MP3 n'est encore déposé, une douce mélodie acoustique traditionnelle pentatonique est générée automatiquement en temps réel pour tester le son sans attendre.
+  - Prise en charge native des formats `.m4a` et `.mp3`.
 
 ### 3. Le Déroulement (Timeline Interactive)
 Affichage vertical moderne présentant la chronologie complète avec badges d'heures et icônes thématiques :
