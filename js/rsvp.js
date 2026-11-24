@@ -1,6 +1,6 @@
 /**
  * Mariage Tuborg & Yacine - Gestionnaire RSVP & Confirmation
- * Samedi 28 Novembre 2026 - Saint-Louis, Sénégal
+ * 27 & 29 Novembre 2026 - Pikine & Ngaparou, Sénégal
  */
 
 // CONFIGURATION DES NUMÉROS WHATSAPP DES MARIÉS
@@ -96,7 +96,7 @@ function initRsvpForm() {
     if (eventChoice === 'takku') {
       evenementTexte = "Takku Jàkka uniquement (27 Nov - Pikine)";
     } else if (eventChoice === 'reception') {
-      evenementTexte = "Réception uniquement (28 Nov - Ngaparou)";
+      evenementTexte = "Réception uniquement (29 Nov - Ngaparou)";
     }
 
     const rsvpData = {
@@ -273,7 +273,7 @@ function formatWhatsAppMessage(data) {
   lines.push(`━━━━━━━━━━━━━━━━━━━━`);
   lines.push(`🎨 *Thème / Couleurs :* Blanc & Rouge Bordeaux`);
   lines.push(`🕌 *Ven. 27 Nov :* Takku Jàkka à Pikine, Kogn Jamono`);
-  lines.push(`🎉 *Sam. 28 Nov :* Réception à Ngaparou (Saly, Mbour)`);
+  lines.push(`🎉 *Dim. 29 Nov :* Réception à Ngaparou (Saly, Mbour)`);
 
   return lines.join('\n');
 }
@@ -304,7 +304,7 @@ function showSuccessModal(data) {
         <p class="text-gray-600 text-sm">
           Tuborg & Yacine sont ravis de vous compter parmi eux pour célébrer leur union le 
           <strong>vendredi 27 novembre 2026</strong> à Pikine (Kogn Jamono) et le 
-          <strong>samedi 28 novembre 2026</strong> à Ngaparou (Saly, Mbour).
+          <strong>dimanche 29 novembre 2026</strong> à Ngaparou (Saly, Mbour).
         </p>
         <p class="text-xs text-rose-900 font-semibold mt-2">✨ Thème & Dress Code : Blanc et Rouge Bordeaux ✨</p>
       `;

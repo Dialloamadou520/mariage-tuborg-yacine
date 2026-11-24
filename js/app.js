@@ -1,6 +1,6 @@
 /**
  * Mariage Tuborg & Yacine - Script Principal
- * Samedi 28 Novembre 2026 - Saint-Louis, Sénégal
+ * 27 & 29 Novembre 2026 - Pikine & Ngaparou, Sénégal
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -249,11 +249,11 @@ function initCalendarGenerator() {
   const icalBtn = document.getElementById('btn-download-ics');
 
   const eventTitle = encodeURIComponent("Mariage de Tuborg & Yacine (Takku Jàkka & Réception)");
-  const eventDesc = encodeURIComponent("Célébration du mariage de Tuborg & Yacine.\n\n• Vendredi 27 Nov 2026 : Takku Jàkka (mariage religieux) à Pikine, Kogn Jamono.\n• Samedi 28 Nov 2026 : Réception festive à Ngaparou (Saly, Mbour).\n\nThème / Dress Code : Blanc et Rouge Bordeaux.");
+  const eventDesc = encodeURIComponent("Célébration du mariage de Tuborg & Yacine.\n\n• Vendredi 27 Nov 2026 : Takku Jàkka (mariage religieux) à Pikine, Kogn Jamono.\n• Dimanche 29 Nov 2026 : Réception festive à Ngaparou (Saly, Mbour).\n\nThème / Dress Code : Blanc et Rouge Bordeaux.");
   const eventLocation = encodeURIComponent("Pikine (Kogn Jamono) & Ngaparou (Saly, Mbour), Sénégal");
   
-  // Du 27 Nov 15h00 au 29 Nov 03h00 (GMT)
-  const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${eventTitle}&dates=20261127T150000Z/20261129T030000Z&details=${eventDesc}&location=${eventLocation}`;
+  // Du 27 Nov 15h00 au 30 Nov 03h00 (GMT)
+  const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${eventTitle}&dates=20261127T150000Z/20261130T030000Z&details=${eventDesc}&location=${eventLocation}`;
 
   if (gcalBtn) {
     gcalBtn.href = gcalUrl;
@@ -279,9 +279,9 @@ function downloadICalFile() {
     'UID:mariage-tuborg-yacine-20261127@pikine-ngaparou',
     'DTSTAMP:20261124T000000Z',
     'DTSTART:20261127T150000Z',
-    'DTEND:20261129T030000Z',
+    'DTEND:20261130T030000Z',
     'SUMMARY:Mariage de Tuborg & Yacine (Takku Jàkka & Réception)',
-    'DESCRIPTION:Célébration de l\'union de Tuborg et Yacine.\\nVendredi 27 Nov : Takku Jàkka à Pikine (Kogn Jamono).\\nSamedi 28 Nov : Réception à Ngaparou (Saly, Mbour).\\nThème : Blanc et Rouge Bordeaux.',
+    'DESCRIPTION:Célébration de l\'union de Tuborg et Yacine.\\nVendredi 27 Nov : Takku Jàkka à Pikine (Kogn Jamono).\\nDimanche 29 Nov : Réception à Ngaparou (Saly, Mbour).\\nThème : Blanc et Rouge Bordeaux.',
     'LOCATION:Pikine (Kogn Jamono) & Ngaparou (Saly, Mbour), Sénégal',
     'STATUS:CONFIRMED',
     'END:VEVENT',

@@ -1,5 +1,5 @@
 # 💍 Site Vitrine Officiel - Mariage de Tuborg & Yacine
-**Vendredi 27 & Samedi 28 Novembre 2026**  
+**Vendredi 27 & Dimanche 29 Novembre 2026**  
 **Pikine, Kogn Jamono & Ngaparou (Saly, Mbour), Sénégal**  
 **Thème & Couleurs Officiels : Blanc et Rouge Bordeaux**
 
@@ -20,7 +20,7 @@ Il propose une expérience immersive aux couleurs du thème officiel **Blanc et 
 - **Carrousel fluide (Swiper.js - 5 photos max)** : Conçu pour afficher jusqu'à 5 photos de couple (`photo1.jpg` à `photo5.jpg` dans `assets/images/`) avec repli automatique sur des visuels de haute qualité.
 - **Détails immédiats** :
   - 🕌 **Le 27 Novembre** : Takku Jàkka (mariage religieux) à Pikine, Kogn Jamono.
-  - 🎉 **Le 28 Novembre** : Réception festive à Ngaparou (Saly, Mbour).
+  - 🎉 **Le 29 Novembre** : Réception festive à Ngaparou (Saly, Mbour).
 - **Compte à rebours dynamique** : Calcul en temps réel jusqu'au 27 novembre 2026 à 15h00 GMT.
 - **Bouton d'action CTA** : *« Confirmer ma présence »* avec défilement fluide vers le formulaire RSVP.
 - **Boutons Agenda** : Synchronisation en 1 clic avec **Google Agenda** et téléchargement du fichier **.ics (Apple / Outlook)**.
@@ -45,7 +45,7 @@ Affichage vertical moderne présentant la chronologie complète des deux journé
   - 14h30 - 15h30 : Prière & Bénédiction religieuse à la mosquée
   - 16h00 : Cérémonie du Takku Jàkka (mariage religieux) au domicile familial
   - 17h30 - 20h00 : Collation, partage familial et bénédictions
-- **Samedi 28 Novembre 2026 — Grande Réception (Ngaparou, Saly Mbour)** :
+- **Dimanche 29 Novembre 2026 — Grande Réception (Ngaparou, Saly Mbour)** :
   - 17h00 : Accueil des invités & Cocktail au coucher du soleil
   - 18h30 : Cérémonie d’ouverture & Discours
   - 19h15 : Entrée triomphale des mariés (Thème Blanc & Bordeaux)
@@ -69,8 +69,8 @@ Affichage vertical moderne présentant la chronologie complète des deux journé
 
 ### 7. Formulaire RSVP (Module de Confirmation Intelligent)
 - **Choix d'événements** :
-  - 👑 *Aux 2 événements (Takku Jàkka le 27 + Réception le 28)*
-  - 🎉 *Uniquement à la Réception (28 Nov à Ngaparou)*
+  - 👑 *Aux 2 événements (Takku Jàkka le 27 + Réception le 29)*
+  - 🎉 *Uniquement à la Réception (29 Nov à Ngaparou)*
   - 🕌 *Uniquement au Takku Jàkka (27 Nov à Pikine)*
 - **Champs** : Nom & Prénom, Présence (Oui/Non), Nombre d'accompagnants, Noms des accompagnants, Téléphone / WhatsApp, Régime alimentaire, Message personnel.
 - **Transmission WhatsApp Directe pour les Mariés** :
