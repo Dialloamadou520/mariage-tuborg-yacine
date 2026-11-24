@@ -63,7 +63,8 @@ Affichage vertical moderne présentant la chronologie complète des deux journé
   - Conseils d'accès depuis Dakar via l'Autoroute à péage A1 (~45 min, sortie Sindia-Somone).
 
 ### 6. Dress Code & Infos Utiles
-- Mise en avant du thème **Blanc et Rouge Bordeaux** avec palette visuelle d'inspiration.
+- Titre : **Élégance Royale & Teranga**
+- Couleurs officielles : **Blanc et Rouge Bordeaux** (avec palette visuelle d'inspiration).
 - Conseils d'hébergement à proximité de Ngaparou (Somone, Saly Portudal).
 
 ### 7. Formulaire RSVP (Module de Confirmation Intelligent)
