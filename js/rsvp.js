@@ -79,6 +79,8 @@ function initRsvpForm() {
     const fullName = document.getElementById('rsvp-fullname')?.value.trim();
     const presenceEl = document.querySelector('input[name="presence"]:checked');
     const presence = presenceEl ? presenceEl.value : 'oui';
+    const eventChoiceEl = document.querySelector('input[name="event_choice"]:checked');
+    const eventChoice = eventChoiceEl ? eventChoiceEl.value : 'les-deux';
     const companionsCount = presence === 'oui' ? (document.getElementById('nb-accompagnants')?.value || '0') : '0';
     const companionsNames = presence === 'oui' ? (document.getElementById('rsvp-companions-names')?.value.trim() || '') : '';
     const phone = document.getElementById('rsvp-phone')?.value.trim() || '';
@@ -90,6 +92,13 @@ function initRsvpForm() {
       return;
     }
 
+    let evenementTexte = "Les 2 célébrations (Takku Jàkka + Réception)";
+    if (eventChoice === 'takku') {
+      evenementTexte = "Takku Jàkka uniquement (27 Nov - Pikine)";
+    } else if (eventChoice === 'reception') {
+      evenementTexte = "Réception uniquement (28 Nov - Ngaparou)";
+    }
+
     const rsvpData = {
       id: 'rsvp_' + Date.now(),
       dateSubmitted: new Date().toISOString(),
@@ -98,6 +107,7 @@ function initRsvpForm() {
       }),
       nomComplet: fullName,
       presence: presence === 'oui' ? 'Présent' : 'Absent',
+      evenementChoisi: presence === 'oui' ? evenementTexte : '-',
       nombreAccompagnants: parseInt(companionsCount, 10),
       nomsAccompagnants: companionsNames,
       telephone: phone,
@@ -241,6 +251,7 @@ function formatWhatsAppMessage(data) {
   ];
 
   if (isPresent) {
+    lines.push(`📍 *Programme choisi :* ${data.evenementChoisi || 'Les 2 célébrations'}`);
     const acc = data.nombreAccompagnants > 0 
       ? `+${data.nombreAccompagnants} personne(s) ${data.nomsAccompagnants ? `(${data.nomsAccompagnants})` : ''}` 
       : 'Vient seul(e)';
@@ -260,8 +271,9 @@ function formatWhatsAppMessage(data) {
   }
 
   lines.push(`━━━━━━━━━━━━━━━━━━━━`);
-  lines.push(`📅 *Date :* Samedi 28 Novembre 2026 à 17h00`);
-  lines.push(`📍 *Lieu :* Hôtel Keur Dada, Saint-Louis (Sénégal)`);
+  lines.push(`🎨 *Thème / Couleurs :* Blanc & Rouge Bordeaux`);
+  lines.push(`🕌 *Ven. 27 Nov :* Takku Jàkka à Pikine, Kogn Jamono`);
+  lines.push(`🎉 *Sam. 28 Nov :* Réception à Ngaparou (Saly, Mbour)`);
 
   return lines.join('\n');
 }
@@ -287,8 +299,14 @@ function showSuccessModal(data) {
         ? ` avec ${data.nombreAccompagnants} accompagnant(s)` 
         : ` (vous venez seul(e))`;
       detailsEl.innerHTML = `
-        <p class="text-emerald-900 font-semibold mb-2">Votre présence est bien confirmée${accompagnantsTexte} !</p>
-        <p class="text-gray-600 text-sm">Tuborg & Yacine ont hâte de vous retrouver le <strong>samedi 28 novembre 2026 dès 17h00</strong> à l'Hôtel Keur Dada à Saint-Louis pour célébrer ce moment inoubliable.</p>
+        <p class="text-rose-950 font-bold mb-2">Votre présence est bien confirmée${accompagnantsTexte} !</p>
+        <p class="text-xs uppercase font-semibold tracking-wider text-rose-800 mb-2">Programme : ${data.evenementChoisi}</p>
+        <p class="text-gray-600 text-sm">
+          Tuborg & Yacine sont ravis de vous compter parmi eux pour célébrer leur union le 
+          <strong>vendredi 27 novembre 2026</strong> à Pikine (Kogn Jamono) et le 
+          <strong>samedi 28 novembre 2026</strong> à Ngaparou (Saly, Mbour).
+        </p>
+        <p class="text-xs text-rose-900 font-semibold mt-2">✨ Thème & Dress Code : Blanc et Rouge Bordeaux ✨</p>
       `;
     } else {
       detailsEl.innerHTML = `

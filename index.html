@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mariage de Tuborg & Yacine | 28 Novembre 2026 • Saint-Louis, Sénégal</title>
+  <title>Mariage de Tuborg & Yacine | 27 & 28 Novembre 2026 • Pikine & Ngaparou</title>
   
   <!-- Meta SEO & Social Sharing OpenGraph -->
-  <meta name="description" content="Tuborg & Yacine ont le plaisir de vous inviter à la célébration de leur union le samedi 28 novembre 2026 à l'Hôtel Keur Dada, Saint-Louis, Sénégal.">
-  <meta property="og:title" content="Mariage de Tuborg & Yacine | 28 Novembre 2026">
-  <meta property="og:description" content="Rejoignez-nous pour célébrer notre union à l'Hôtel Keur Dada, Saint-Louis, Sénégal. Découvrez le programme et confirmez votre présence en ligne.">
+  <meta name="description" content="Tuborg & Yacine ont le plaisir de vous inviter à la célébration de leur mariage. Takku Jàkka le 27 nov. à Pikine (Kogn Jamono) et Réception le 28 nov. à Ngaparou (Saly, Mbour). Thème : Blanc et Rouge Bordeaux.">
+  <meta property="og:title" content="Mariage de Tuborg & Yacine | 27 & 28 Novembre 2026">
+  <meta property="og:description" content="Takku Jàkka à Pikine & Grande Réception à Ngaparou (Saly, Mbour). Thème officiel : Blanc et Rouge Bordeaux. Confirmez votre présence en ligne.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0F382A">
+  <meta name="theme-color" content="#780016">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
@@ -37,14 +37,15 @@
         extend: {
           colors: {
             wedding: {
+              bordeaux: '#780016',
+              bordeauxDark: '#4A000E',
+              bordeauxLight: '#9E1B32',
+              bordeauxDeep: '#580010',
               gold: '#D4AF37',
               goldLight: '#F3E5AB',
               goldDark: '#9C7A28',
-              emerald: '#0F382A',
-              emeraldDark: '#092219',
-              emeraldLight: '#18523E',
-              sand: '#FAF8F5',
-              sandAlt: '#F4EFEA',
+              sand: '#FAF7F5',
+              sandAlt: '#F8F3F1',
             }
           },
           fontFamily: {
@@ -58,7 +59,7 @@
     }
   </script>
 </head>
-<body class="font-sans bg-[#FAF8F5] text-gray-800 antialiased selection:bg-wedding-gold selection:text-white">
+<body class="font-sans bg-[#FAF7F5] text-gray-800 antialiased selection:bg-wedding-bordeaux selection:text-white">
 
   <!-- Audio Element Hidden -->
   <audio id="wedding-audio" loop preload="auto">
@@ -75,92 +76,99 @@
       
       <!-- Logo / Monogramme des Mariés -->
       <a href="#accueil" id="nav-logo-brand" class="group flex items-center space-x-3 cursor-pointer select-none">
-        <div class="w-11 h-11 rounded-full border border-wedding-gold/60 flex items-center justify-center bg-wedding-emerald/10 text-wedding-gold group-hover:bg-wedding-gold group-hover:text-wedding-emerald transition-all duration-300">
+        <div class="w-11 h-11 rounded-full border border-wedding-gold/60 flex items-center justify-center bg-wedding-bordeaux text-wedding-gold group-hover:bg-wedding-gold group-hover:text-wedding-bordeaux transition-all duration-300 shadow-md">
           <span class="font-display font-bold text-lg">T&Y</span>
         </div>
         <div class="flex flex-col">
-          <span class="font-serif text-2xl font-semibold tracking-wider text-wedding-emerald">Tuborg & Yacine</span>
-          <span class="text-[10px] uppercase tracking-widest text-wedding-gold font-medium">28 Novembre 2026 • Saint-Louis</span>
+          <span class="font-serif text-2xl font-semibold tracking-wider text-wedding-bordeaux">Tuborg & Yacine</span>
+          <span class="text-[10px] uppercase tracking-widest text-wedding-gold font-medium">27 & 28 Novembre 2026 • Pikine & Ngaparou</span>
         </div>
       </a>
 
       <!-- Menu Liens Desktop -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
-        <a href="#accueil" class="hover:text-wedding-gold transition-colors duration-200">Accueil</a>
-        <a href="#notre-histoire" class="hover:text-wedding-gold transition-colors duration-200">Notre Histoire</a>
-        <a href="#programme" class="hover:text-wedding-gold transition-colors duration-200">Programme</a>
-        <a href="#localisation" class="hover:text-wedding-gold transition-colors duration-200">Lieu & Accès</a>
-        <a href="#infos" class="hover:text-wedding-gold transition-colors duration-200">Infos Utiles</a>
-        <a href="#rsvp" class="btn-gold px-6 py-2.5 text-xs text-wedding-emerald font-bold tracking-wider">
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-gray-700">
+        <a href="#accueil" class="hover:text-wedding-bordeaux transition-colors duration-200">Accueil</a>
+        <a href="#notre-histoire" class="hover:text-wedding-bordeaux transition-colors duration-200">Notre Histoire</a>
+        <a href="#galerie" class="hover:text-wedding-bordeaux transition-colors duration-200">Photos (5)</a>
+        <a href="#programme" class="hover:text-wedding-bordeaux transition-colors duration-200">Programme</a>
+        <a href="#localisation" class="hover:text-wedding-bordeaux transition-colors duration-200">Lieux & Accès</a>
+        <a href="#infos" class="hover:text-wedding-bordeaux transition-colors duration-200">Dress Code</a>
+        <a href="#rsvp" class="btn-bordeaux px-6 py-2.5 text-xs font-bold tracking-wider">
           Confirmer Présence
         </a>
       </nav>
 
       <!-- Bouton Menu Mobile -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-wedding-emerald hover:text-wedding-gold focus:outline-none" aria-label="Ouvrir le menu">
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-wedding-bordeaux hover:text-wedding-gold focus:outline-none" aria-label="Ouvrir le menu">
         <i data-lucide="menu" class="w-7 h-7"></i>
       </button>
     </div>
 
     <!-- Menu Déroulant Mobile -->
     <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-b border-wedding-gold/20 px-6 py-6 shadow-xl space-y-4">
-      <a href="#accueil" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Accueil</a>
-      <a href="#notre-histoire" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Notre Histoire</a>
-      <a href="#programme" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Programme de la journée</a>
-      <a href="#localisation" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Lieu & Accès (Hôtel Keur Dada)</a>
-      <a href="#infos" class="block text-base font-medium text-gray-800 hover:text-wedding-gold">Infos & Dress Code</a>
-      <a href="#rsvp" class="block w-full text-center btn-gold py-3 text-sm font-bold">
+      <a href="#accueil" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Accueil</a>
+      <a href="#notre-histoire" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Notre Histoire</a>
+      <a href="#galerie" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Galerie des Mariés (5 Photos)</a>
+      <a href="#programme" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Programme (27 & 28 Nov)</a>
+      <a href="#localisation" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Lieux & Accès (Pikine & Ngaparou)</a>
+      <a href="#infos" class="block text-base font-medium text-gray-800 hover:text-wedding-bordeaux">Dress Code (Blanc & Bordeaux)</a>
+      <a href="#rsvp" class="block w-full text-center btn-bordeaux py-3 text-sm font-bold">
         Confirmer ma présence (RSVP)
       </a>
     </div>
   </header>
 
   <!-- ========================================================
-       SECTION 1 : ACCUEIL / BANNIÈRE HÉRO & CARROUSEL D'IMAGES
+       SECTION 1 : ACCUEIL / BANNIÈRE HÉRO & CARROUSEL D'IMAGES (5 PHOTOS)
        ======================================================== -->
   <section id="accueil" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
     
-    <!-- Carrousel d'Images en Arrière-Plan (Swiper.js) -->
+    <!-- Carrousel d'Images en Arrière-Plan (Swiper.js - 5 Photos Max) -->
     <div class="absolute inset-0 z-0">
       <div class="swiper hero-swiper h-full w-full">
         <div class="swiper-wrapper">
           
-          <!-- Slide 1 : Couple Mariage Royal & Chaleureux -->
+          <!-- Photo 1 / 5 : Accueil & Romance Royale -->
           <div class="swiper-slide hero-slide">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85" 
-                 alt="Célébration de mariage" 
+            <img src="assets/images/photo1.jpg" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85';" 
+                 alt="Mariage de Tuborg & Yacine - Photo 1" 
                  class="hero-slide-img brightness-90">
             <div class="hero-overlay absolute inset-0"></div>
           </div>
 
-          <!-- Slide 2 : Ambiance Coucher de Soleil sur Saint-Louis -->
+          <!-- Photo 2 / 5 : Takku Jàkka & Ambiance Traditionnelle -->
           <div class="swiper-slide hero-slide">
-            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=2000&q=85" 
-                 alt="Saint-Louis fleuve Sénégal coucher de soleil" 
+            <img src="assets/images/photo2.jpg" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=2000&q=85';" 
+                 alt="Mariage de Tuborg & Yacine - Photo 2" 
                  class="hero-slide-img brightness-90">
             <div class="hero-overlay absolute inset-0"></div>
           </div>
 
-          <!-- Slide 3 : Table de Banquet & Décoration Florale Dorée -->
+          <!-- Photo 3 / 5 : Élégance Blanc & Rouge Bordeaux -->
           <div class="swiper-slide hero-slide">
-            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85" 
-                 alt="Réception et banquet de mariage élégant" 
+            <img src="assets/images/photo3.jpg" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85';" 
+                 alt="Mariage de Tuborg & Yacine - Photo 3" 
                  class="hero-slide-img brightness-90">
             <div class="hero-overlay absolute inset-0"></div>
           </div>
 
-          <!-- Slide 4 : Alliances et Émotion -->
+          <!-- Photo 4 / 5 : Alliances, Émotion & Complicité -->
           <div class="swiper-slide hero-slide">
-            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=2000&q=85" 
-                 alt="Alliances et orfèvrerie de mariage" 
+            <img src="assets/images/photo4.jpg" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=2000&q=85';" 
+                 alt="Mariage de Tuborg & Yacine - Photo 4" 
                  class="hero-slide-img brightness-90">
             <div class="hero-overlay absolute inset-0"></div>
           </div>
 
-          <!-- Slide 5 : Fête, Joie & Soirée Dansante -->
+          <!-- Photo 5 / 5 : Réception & Célébration Festive -->
           <div class="swiper-slide hero-slide">
-            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=2000&q=85" 
-                 alt="Soirée dansante et festivités" 
+            <img src="assets/images/photo5.jpg" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=2000&q=85';" 
+                 alt="Mariage de Tuborg & Yacine - Photo 5" 
                  class="hero-slide-img brightness-90">
             <div class="hero-overlay absolute inset-0"></div>
           </div>
@@ -174,15 +182,16 @@
     <!-- Contenu Central Hero -->
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white flex flex-col items-center">
       
-      <!-- Couronne / Ornement Décoratif -->
-      <div class="inline-flex items-center space-x-3 mb-4 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-wedding-gold/40 text-wedding-goldLight">
-        <i data-lucide="sparkles" class="w-4 h-4 text-wedding-gold"></i>
-        <span class="text-xs uppercase tracking-widest font-semibold">Invitation Officielle</span>
+      <!-- Couronne / Badge Thème Officiel Blanc & Rouge Bordeaux -->
+      <div class="inline-flex items-center space-x-3 mb-4 px-5 py-2 rounded-full bg-black/40 backdrop-blur-md border border-wedding-gold/50 text-wedding-goldLight shadow-xl">
+        <span class="w-2.5 h-2.5 rounded-full bg-white border border-wedding-gold/80"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-[#780016] border border-wedding-gold/80"></span>
+        <span class="text-xs uppercase tracking-widest font-bold text-white">Thème : Blanc & Rouge Bordeaux</span>
         <i data-lucide="sparkles" class="w-4 h-4 text-wedding-gold"></i>
       </div>
 
       <!-- Accroche Principale Spécifiée -->
-      <p class="font-serif italic text-xl sm:text-2xl lg:text-3xl font-light text-wedding-goldLight/95 max-w-2xl leading-relaxed mb-4 drop-shadow">
+      <p class="font-serif italic text-xl sm:text-2xl lg:text-3xl font-light text-wedding-goldLight/95 max-w-2xl leading-relaxed mb-3 drop-shadow">
         « Tuborg & Yacine ont le plaisir de vous inviter à la célébration de leur union »
       </p>
 
@@ -194,33 +203,44 @@
       </h1>
 
       <!-- Séparateur Stylisé -->
-      <div class="section-ornament !my-4">
+      <div class="section-ornament !my-3">
         <span class="ornament-line !w-16"></span>
         <span class="ornament-diamond"></span>
         <span class="ornament-line !w-16"></span>
       </div>
 
-      <!-- Détails Immédiats Spécifiés -->
-      <div class="bg-black/35 backdrop-blur-md border border-wedding-gold/30 rounded-2xl px-6 py-4 my-6 inline-flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base font-medium shadow-2xl">
-        <div class="flex items-center space-x-2 text-wedding-goldLight">
-          <i data-lucide="calendar" class="w-5 h-5 text-wedding-gold"></i>
-          <span class="font-semibold text-white">28 Novembre 2026</span>
+      <!-- Détails Immédiats Spécifiés : 2 Dates & 2 Lieux -->
+      <div class="bg-black/45 backdrop-blur-md border border-wedding-gold/40 rounded-2xl px-6 py-5 my-5 max-w-2xl w-full shadow-2xl space-y-3">
+        
+        <!-- Événement 1 : Takku Jàkka -->
+        <div class="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm border-b border-white/10 pb-2.5 gap-2">
+          <div class="flex items-center space-x-2 text-wedding-goldLight">
+            <i data-lucide="church" class="w-4 h-4 text-wedding-gold shrink-0"></i>
+            <span class="font-bold text-white uppercase tracking-wider">Le 27 Nov. : Takku Jàkka (Mariage Religieux)</span>
+          </div>
+          <div class="flex items-center space-x-1.5 text-gray-300">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-wedding-gold"></i>
+            <span>Pikine, Kogn Jamono</span>
+          </div>
         </div>
-        <span class="hidden sm:inline text-wedding-gold/40">•</span>
-        <div class="flex items-center space-x-2 text-wedding-goldLight">
-          <i data-lucide="clock" class="w-5 h-5 text-wedding-gold"></i>
-          <span class="font-semibold text-white">À partir de 17h00</span>
+
+        <!-- Événement 2 : Réception -->
+        <div class="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm gap-2">
+          <div class="flex items-center space-x-2 text-wedding-goldLight">
+            <i data-lucide="party-popper" class="w-4 h-4 text-wedding-gold shrink-0"></i>
+            <span class="font-bold text-white uppercase tracking-wider">Le 28 Nov. : Grande Réception</span>
+          </div>
+          <div class="flex items-center space-x-1.5 text-gray-300">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-wedding-gold"></i>
+            <span>Ngaparou (Saly, Mbour)</span>
+          </div>
         </div>
-        <span class="hidden sm:inline text-wedding-gold/40">•</span>
-        <div class="flex items-center space-x-2 text-wedding-goldLight">
-          <i data-lucide="map-pin" class="w-5 h-5 text-wedding-gold"></i>
-          <span class="font-semibold text-white">Hôtel Keur Dada, Saint-Louis</span>
-        </div>
+
       </div>
 
-      <!-- Compte à Rebours (Countdown) -->
-      <div class="mb-8 w-full max-w-lg">
-        <p id="countdown-title" class="text-xs uppercase tracking-widest text-wedding-goldLight/80 mb-3 font-semibold">
+      <!-- Compte à Rebours (Countdown vers le 27 Novembre 2026) -->
+      <div class="mb-7 w-full max-w-lg">
+        <p id="countdown-title" class="text-xs uppercase tracking-widest text-wedding-goldLight/90 mb-3 font-semibold">
           Compte à rebours avant le grand jour
         </p>
         <div class="grid grid-cols-4 gap-3 sm:gap-4">
@@ -250,13 +270,13 @@
           <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
         </a>
         <a href="#programme" class="btn-outline-gold px-7 py-3.5 text-sm sm:text-base font-medium w-full sm:w-auto flex items-center justify-center space-x-2">
-          <i data-lucide="compass" class="w-4 h-4 mr-1"></i>
+          <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
           <span>Découvrir le programme</span>
         </a>
       </div>
 
       <!-- Liens Calendrier Rapides -->
-      <div class="mt-8 flex items-center justify-center space-x-6 text-xs text-white/70">
+      <div class="mt-7 flex items-center justify-center space-x-6 text-xs text-white/80">
         <a id="btn-add-gcal" href="#" class="hover:text-wedding-gold transition-colors inline-flex items-center space-x-1.5">
           <i data-lucide="calendar-plus" class="w-4 h-4"></i>
           <span>Ajouter à Google Agenda</span>
@@ -283,7 +303,7 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <span class="font-script text-4xl sm:text-5xl text-wedding-gold block mb-2">Bismillah</span>
-      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mb-4">
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-bordeaux font-semibold mb-4">
         Deux cœurs, une même destinée
       </h2>
 
@@ -293,32 +313,33 @@
         <span class="ornament-line"></span>
       </div>
 
-      <div class="prose prose-lg mx-auto text-gray-600 font-serif text-lg sm:text-xl leading-relaxed space-y-6 mt-8">
+      <div class="prose prose-lg mx-auto text-gray-700 font-serif text-lg sm:text-xl leading-relaxed space-y-6 mt-8">
         <p>
           Chers parents, chers amis, chers proches venus d'ici et d'ailleurs,
         </p>
         <p>
-          C’est avec une immense joie et une vive émotion que nous franchissons ensemble cette étape sacrée de notre vie. 
-          Entourés de l'amour de nos familles et des bénédictions de nos aînés, nous avons choisi la ville tricentenaire 
-          et poétique de <strong>Saint-Louis (Ndar)</strong> pour sceller notre union.
+          C’est avec un bonheur infini et une profonde gratitude que nous vous convions à la célébration sacrée de notre union.
+          Entourés de l'amour de nos familles et des prières bienveillantes de nos aînés, nous nous unirons religieusement 
+          lors du <strong>Takku Jàkka le 27 novembre à Pikine (Kogn Jamono)</strong>, avant de nous réunir pour une somptueuse 
+          <strong>Réception le 28 novembre à Ngaparou (Saly, Mbour)</strong>.
         </p>
-        <p class="italic text-wedding-emerald font-medium">
-          « Votre présence à nos côtés sera le plus beau témoignage de cette belle aventure que nous commençons à deux. 
-          Venez partager nos rires, nos danses, et célébrer la fête jusqu'au bout de la nuit ! »
+        <p class="italic text-wedding-bordeaux font-semibold">
+          « Nous avons hâte de célébrer notre amour à vos côtés, vêtus de nos plus beaux habits Blancs et Rouges Bordeaux, 
+          pour partager rires, festin et danses jusqu'au bout de la nuit ! »
         </p>
       </div>
 
       <!-- Signatures élégantes -->
       <div class="mt-12 flex items-center justify-center space-x-12">
         <div class="text-center">
-          <span class="font-script text-4xl text-wedding-gold block">Tuborg</span>
+          <span class="font-script text-4xl text-wedding-bordeaux block">Tuborg</span>
           <span class="text-xs uppercase tracking-widest text-gray-400 mt-1 block">Le Marié</span>
         </div>
-        <div class="w-8 h-8 rounded-full bg-wedding-sand flex items-center justify-center text-wedding-gold">
+        <div class="w-9 h-9 rounded-full bg-rose-50 border border-wedding-gold/40 flex items-center justify-center text-wedding-bordeaux shadow-sm">
           <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
         </div>
         <div class="text-center">
-          <span class="font-script text-4xl text-wedding-gold block">Yacine</span>
+          <span class="font-script text-4xl text-wedding-bordeaux block">Yacine</span>
           <span class="text-xs uppercase tracking-widest text-gray-400 mt-1 block">La Mariée</span>
         </div>
       </div>
@@ -327,22 +348,108 @@
   </section>
 
   <!-- ========================================================
-       SECTION 3 : LE DÉROULEMENT (TIMELINE INTERACTIVE)
-       Programme chronologique détaillé et moderne
+       SECTION NOUVELLE : GALERIE PHOTO DES MARIÉS (5 PHOTOS MAX)
        ======================================================== -->
-  <section id="programme" class="py-24 bg-wedding-sand relative overflow-hidden">
-    
-    <!-- Décorations de fond douces -->
-    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-wedding-gold/5 blur-3xl pointer-events-none"></div>
-    <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-wedding-emerald/5 blur-3xl pointer-events-none"></div>
+  <section id="galerie" class="py-20 bg-wedding-sand relative border-y border-wedding-gold/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-bordeaux">Moments Précieux</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-bordeaux font-semibold mt-2 mb-3">
+          Galerie des Mariés
+        </h2>
+        <div class="section-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="text-gray-600 text-sm sm:text-base">
+          5 instants magiques capturés pour immortaliser notre complicité et notre amour avant le grand jour.
+        </p>
+      </div>
 
+      <!-- Grille des 5 Photos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Photo 1 (Grande Mise en avant) -->
+        <div class="sm:col-span-2 lg:col-span-2 photo-card aspect-[16/10] group">
+          <img src="assets/images/photo1.jpg" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80';" 
+               alt="Tuborg & Yacine - Photo 1" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <span class="text-white text-sm font-semibold tracking-wider">Tuborg & Yacine — Promesse d'une vie</span>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="photo-card aspect-square group">
+          <img src="assets/images/photo2.jpg" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80';" 
+               alt="Tuborg & Yacine - Photo 2" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white text-xs font-semibold">Takku Jàkka & Bénédictions</span>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="photo-card aspect-square group">
+          <img src="assets/images/photo3.jpg" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80';" 
+               alt="Tuborg & Yacine - Photo 3" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white text-xs font-semibold">Élégance Bordeaux & Blanc</span>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="photo-card aspect-square group">
+          <img src="assets/images/photo4.jpg" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80';" 
+               alt="Tuborg & Yacine - Photo 4" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white text-xs font-semibold">Alliances & Amour Éternel</span>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="photo-card aspect-square group">
+          <img src="assets/images/photo5.jpg" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80';" 
+               alt="Tuborg & Yacine - Photo 5" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white text-xs font-semibold">Célébration à Ngaparou</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Note pour les mariés -->
+      <p class="text-center text-xs text-gray-500 mt-6 italic">
+        💡 Les 5 photos des mariés peuvent être facilement personnalisées dans le dossier <code>assets/images/</code> (photo1.jpg à photo5.jpg).
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3 : LE DÉROULEMENT (TIMELINE INTERACTIVE EN 2 JOURS)
+       • Le 27 : Takku Jàkka à Pikine, Kogn Jamono
+       • Le 28 : Réception à Ngaparou (Saly, Mbour)
+       ======================================================== -->
+  <section id="programme" class="py-24 bg-white relative overflow-hidden">
+    
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- En-tête de Section -->
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Le Déroulement</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
-          Le Programme de la Célébration
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-bordeaux">Le Déroulement</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-bordeaux font-semibold mt-2 mb-3">
+          Programme des Festivités
         </h2>
         <div class="section-ornament">
           <span class="ornament-line"></span>
@@ -350,219 +457,265 @@
           <span class="ornament-line"></span>
         </div>
         <p class="text-gray-600 text-sm sm:text-base">
-          Voici le fil conducteur de notre magnifique journée du samedi 28 novembre 2026. Laissez-vous guider au rythme des festivités.
+          Découvrez la chronologie complète des deux temps forts de notre mariage : le mariage religieux à Pikine puis la grande réception à Ngaparou.
         </p>
       </div>
 
-      <!-- Conteneur Timeline Verticale Interactive -->
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
-
-        <!-- Étape 1 : 17h00 - Accueil & Cocktail -->
-        <div class="timeline-item left">
-          <div class="timeline-badge">
-            <i data-lucide="glass-water" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
-              17h00
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Accueil des invités & Cocktail de bienvenue
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Arrivée des convives dans les jardins de l'Hôtel Keur Dada. Rafraîchissements, cocktails signature aux saveurs locales et premières retrouvailles musicales.
-            </p>
+      <!-- ========================================================
+           JOUR 1 : VENDREDI 27 NOVEMBRE - TAKKU JÀKKA (PIKINE)
+           ======================================================== -->
+      <div class="mb-20">
+        
+        <!-- Badge Jour 1 -->
+        <div class="flex items-center justify-center mb-10">
+          <div class="inline-flex items-center space-x-3 px-6 py-2.5 rounded-full bg-wedding-bordeaux text-white shadow-lg border border-wedding-gold/40">
+            <i data-lucide="church" class="w-5 h-5 text-wedding-gold"></i>
+            <span class="font-serif text-lg font-bold tracking-wider">Vendredi 27 Novembre 2026</span>
+            <span class="text-wedding-gold text-sm font-semibold">• Pikine, Kogn Jamono</span>
           </div>
         </div>
 
-        <!-- Étape 2 : 18h00 - Cérémonie d'ouverture -->
-        <div class="timeline-item right">
-          <div class="timeline-badge">
-            <i data-lucide="crown" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
-              18h00
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Cérémonie d’ouverture
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Installation officielle des invités, introduction solennelle et prières de bénédiction pour placer l'union sous les plus auspices.
-            </p>
-          </div>
-        </div>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
 
-        <!-- Étape 3 : 18h45 - Entrée des mariés -->
-        <div class="timeline-item left">
-          <div class="timeline-badge">
-            <i data-lucide="sparkles" class="w-5 h-5 text-wedding-gold"></i>
+          <!-- Étape 1 : Prière & Bénédiction religieuse -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="book-open" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                14h30 - 15h30
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Prière & Bénédiction à la Mosquée
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Rassemblement des familles, témoins et aînés pour la prière de bénédiction solennelle à la mosquée de Kogn Jamono, scellant religieusement l'union selon les traditions saintes.
+              </p>
+            </div>
           </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
-              18h45
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Entrée triomphale des mariés
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Accueil chaleureux de Tuborg & Yacine sous les ovations, chants traditionnels et roulements de tambours festifs.
-            </p>
-          </div>
-        </div>
 
-        <!-- Étape 4 : 19h15 - Discours & remerciements -->
-        <div class="timeline-item right">
-          <div class="timeline-badge">
-            <i data-lucide="mic" class="w-5 h-5 text-wedding-gold"></i>
+          <!-- Étape 2 : Cérémonie du Takku Jàkka -->
+          <div class="timeline-item right">
+            <div class="timeline-badge">
+              <i data-lucide="award" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-bordeaux mb-2">
+                16h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Takku Jàkka (Mariage Religieux)
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Célébration officielle au domicile familial à Pikine Kogn Jamono. Discours des sages, vœux et prières pour la félicité et la prospérité du foyer de Tuborg & Yacine.
+              </p>
+            </div>
           </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
-              19h15
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Discours & remerciements
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Mots d’amour, hommages des témoins et remerciements sincères des familles à l'assemblée.
-            </p>
-          </div>
-        </div>
 
-        <!-- Étape 5 : 19h45 - Dîner -->
-        <div class="timeline-item left">
-          <div class="timeline-badge">
-            <i data-lucide="utensils" class="w-5 h-5 text-wedding-gold"></i>
+          <!-- Étape 3 : Réception familiale & Partage -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="coffee" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                17h30 – 20h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Collation & Partage familial
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Moment chaleureux de Teranga sénégalaise : distribution de colas, rafraîchissements, mets traditionnels et premières réjouissances en famille.
+              </p>
+            </div>
           </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
-              19h45
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Dîner gastronomique
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Service du grand banquet de noce. Un savoureux festin mêlant haute gastronomie et spécialités sénégalaises d'exception préparées par le chef.
-            </p>
-          </div>
-        </div>
 
-        <!-- Étape 6 : 20h45 - Gâteau & première danse -->
-        <div class="timeline-item right">
-          <div class="timeline-badge">
-            <i data-lucide="cake" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
-              20h45
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Gâteau & première danse
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Découpe de la pièce montée et ouverture du bal par les mariés pour un instant de romance et de poésie partagée.
-            </p>
-          </div>
         </div>
-
-        <!-- Étape 7 : 21h30 - Changement de tenue -->
-        <div class="timeline-item left">
-          <div class="timeline-badge">
-            <i data-lucide="shirt" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
-              21h30
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Changement de tenue
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Petite pause glamour. Les mariés revêtent leurs tenues de fête scintillantes pour lancer les grandes festivités dansantes.
-            </p>
-          </div>
-        </div>
-
-        <!-- Étape 8 : 22h00 - Soirée dansante DJ -->
-        <div class="timeline-item right">
-          <div class="timeline-badge">
-            <i data-lucide="music" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
-              22h00
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Soirée dansante (DJ – Animations – Ambiance)
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Piste de danse ouverte à tous ! Sets endiablés du DJ, surprises musicales, animations et ambiance survoltée sous les étoiles de Saint-Louis.
-            </p>
-          </div>
-        </div>
-
-        <!-- Étape 9 : 00h00 - Tenue traditionnelle & Danses -->
-        <div class="timeline-item left">
-          <div class="timeline-badge">
-            <i data-lucide="award" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-emerald/10 text-wedding-emerald mb-2">
-              00h00
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Changement de tenue traditionnelle
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Mise à l'honneur de nos racines et coutumes sénégalaises : somptueux Bazin & tenues traditionnelles, plateau d'honneur, partage et danses au son du sabar.
-            </p>
-          </div>
-        </div>
-
-        <!-- Étape 10 : 00h30 – 02h00 - Suite jusqu'au bout de la nuit -->
-        <div class="timeline-item right">
-          <div class="timeline-badge">
-            <i data-lucide="moon" class="w-5 h-5 text-wedding-gold"></i>
-          </div>
-          <div class="timeline-card">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-emerald mb-2">
-              00h30 – 02h00
-            </span>
-            <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-emerald mb-1">
-              Suite de la soirée & célébration
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Célébration festive jusqu’au bout de la nuit pour immortaliser des souvenirs gravés à jamais dans nos mémoires.
-            </p>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Bannière Rappel Heure -->
-      <div class="mt-16 text-center">
-        <p class="text-xs uppercase tracking-widest text-wedding-gold font-bold mb-2">Ponctualité appréciée</p>
-        <p class="text-gray-500 text-sm italic">
-          Merci d'arriver dès 17h00 afin de profiter pleinement de chaque moment de la célébration.
-        </p>
+      <!-- ========================================================
+           JOUR 2 : SAMEDI 28 NOVEMBRE - RÉCEPTION À NGAPAROU (SALY)
+           ======================================================== -->
+      <div>
+        
+        <!-- Badge Jour 2 -->
+        <div class="flex items-center justify-center mb-10">
+          <div class="inline-flex items-center space-x-3 px-6 py-2.5 rounded-full bg-wedding-bordeaux text-white shadow-lg border border-wedding-gold/40">
+            <i data-lucide="party-popper" class="w-5 h-5 text-wedding-gold"></i>
+            <span class="font-serif text-lg font-bold tracking-wider">Samedi 28 Novembre 2026</span>
+            <span class="text-wedding-gold text-sm font-semibold">• Réception à Ngaparou (Saly, Mbour)</span>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- 17h00 : Accueil & Cocktail -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="glass-water" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                17h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Accueil des invités & Cocktail de bienvenue
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Arrivée des convives dans le cadre somptueux de Ngaparou (Saly, Petite-Côte). Accueil au son du morceau traditionnel <em>« Obree Daman - Banneex »</em> et cocktails rafraîchissants.
+              </p>
+            </div>
+          </div>
+
+          <!-- 18h30 : Cérémonie d'ouverture -->
+          <div class="timeline-item right">
+            <div class="timeline-badge">
+              <i data-lucide="crown" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-bordeaux mb-2">
+                18h30
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Cérémonie d’ouverture & Discours
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Installation des convives, mot de bienvenue et remerciements sincères des témoins et des familles.
+              </p>
+            </div>
+          </div>
+
+          <!-- 19h15 : Entrée des mariés -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="sparkles" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                19h15
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Entrée triomphale des mariés
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Entrée prestigieuse de Tuborg & Yacine sous les ovations de l'assemblée, en parfaite harmonie avec le thème <strong>Blanc et Rouge Bordeaux</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- 20h00 : Dîner gastronomique -->
+          <div class="timeline-item right">
+            <div class="timeline-badge">
+              <i data-lucide="utensils" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-bordeaux mb-2">
+                20h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Grand Dîner de Noce
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Service du grand banquet gastronomique aux saveurs sénégalaises et internationales concoctées spécialement pour l'événement.
+              </p>
+            </div>
+          </div>
+
+          <!-- 21h15 : Gâteau & Première Danse -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="cake" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                21h15
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Gâteau & Première Danse
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Découpe de la somptueuse pièce montée et ouverture officielle de la piste de danse par nos jeunes mariés.
+              </p>
+            </div>
+          </div>
+
+          <!-- 22h00 : Soirée dansante DJ -->
+          <div class="timeline-item right">
+            <div class="timeline-badge">
+              <i data-lucide="music" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-bordeaux mb-2">
+                22h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Soirée dansante (DJ & Animations)
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Lancement des festivités dansantes ! Mixes exclusifs du DJ, surprises et ambiance festive sous le ciel étoilé de Ngaparou.
+              </p>
+            </div>
+          </div>
+
+          <!-- 00h00 : Tenue traditionnelle & Danses -->
+          <div class="timeline-item left">
+            <div class="timeline-badge">
+              <i data-lucide="award" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-wedding-bordeaux mb-2">
+                00h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Tenue traditionnelle & Danses
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Changement de tenue pour le grand plateau traditionnel. Bazin riche, danses, partage et ambiance sabar inoubliable.
+              </p>
+            </div>
+          </div>
+
+          <!-- 00h30 – 03h00 : Célébration jusqu'au bout de la nuit -->
+          <div class="timeline-item right">
+            <div class="timeline-badge">
+              <i data-lucide="moon" class="w-5 h-5 text-wedding-gold"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-wedding-gold/20 text-wedding-bordeaux mb-2">
+                00h30 – 03h00
+              </span>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-wedding-bordeaux mb-1">
+                Célébration jusqu'au bout de la nuit
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Suite des réjouissances et fête jusqu'aux premières lueurs du jour sur la Petite-Côte.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- ========================================================
-       SECTION 4 : LOCALISATION & ACCÈS (HÔTEL KEUR DADA)
-       Module Google Maps interactif et informations pratiques
+       SECTION 4 : LOCALISATION & ACCÈS (2 LIEUX)
+       • Lieu 1 : Pikine, Kogn Jamono (Takku Jàkka)
+       • Lieu 2 : Ngaparou (Saly, Mbour) (Réception - Google Maps)
        ======================================================== -->
-  <section id="localisation" class="py-24 bg-white relative">
+  <section id="localisation" class="py-24 bg-wedding-sand relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- En-tête de section -->
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Localisation</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
-          Le Lieu de Célébration
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-bordeaux">Localisation & Accès</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-bordeaux font-semibold mt-2 mb-3">
+          Comment Rejoindre les Célébrations
         </h2>
         <div class="section-ornament">
           <span class="ornament-line"></span>
@@ -570,111 +723,124 @@
           <span class="ornament-line"></span>
         </div>
         <p class="text-gray-600 text-sm sm:text-base">
-          Nous vous donnons rendez-vous dans le cadre enchanteur et chaleureux de l'<strong>Hôtel Keur Dada</strong> à Saint-Louis.
+          Retrouvez les itinéraires détaillés pour le Takku Jàkka à Pikine et la grande réception à Ngaparou.
         </p>
       </div>
 
-      <!-- Grille 2 Colonnes : Carte Google Maps + Détails d'Accès -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <!-- Grille des 2 Lieux -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-10">
         
-        <!-- Colonne 1 : Module Google Maps Interactif -->
-        <div class="lg:col-span-7">
-          <div class="map-container relative aspect-[4/3] w-full">
-            <iframe 
-              title="Localisation Hôtel Keur Dada Saint-Louis"
-              src="https://maps.google.com/maps?q=Hotel+Keur+Dada+Saint-Louis+Senegal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-              class="w-full h-full border-0" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-gray-500">
-            <div class="flex items-center space-x-1.5">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-              <span>Coordonnées GPS synchronisées</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <a href="https://maps.google.com/?q=Hotel+Keur+Dada+Saint-Louis+Senegal" target="_blank" rel="noopener noreferrer" class="text-wedding-emerald hover:text-wedding-gold font-semibold underline inline-flex items-center">
-                <span>Ouvrir dans Google Maps</span>
-                <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Colonne 2 : Fiches Pratiques & Itinéraire -->
-        <div class="lg:col-span-5 space-y-6">
-          
-          <!-- Carte Lieu -->
-          <div class="p-6 rounded-2xl bg-wedding-sand border border-wedding-gold/25 shadow-sm">
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-xl bg-wedding-emerald text-wedding-gold flex items-center justify-center shrink-0">
-                <i data-lucide="map-pin" class="w-6 h-6"></i>
+        <!-- CARTE 1 : PIKINE, KOGN JAMONO (LE 27 NOV.) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-wedding-gold/30 shadow-md flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-wedding-bordeaux text-wedding-gold flex items-center justify-center shrink-0">
+                <i data-lucide="church" class="w-6 h-6"></i>
               </div>
               <div>
-                <h3 class="font-serif text-xl font-bold text-wedding-emerald">Hôtel Keur Dada</h3>
-                <p class="text-sm text-gray-600 mt-1">Saint-Louis (Ndar), Sénégal</p>
-                <p class="text-xs text-gray-500 mt-2 leading-relaxed">
-                  Un joyau niché au bord de l'eau, réputé pour son hospitalité légendaire (Teranga), ses jardins fleuris et son cadre magique au crépuscule.
-                </p>
+                <span class="text-xs uppercase tracking-wider font-bold text-wedding-bordeaux">Vendredi 27 Novembre • Takku Jàkka</span>
+                <h3 class="font-serif text-2xl font-bold text-gray-800">Pikine, Kogn Jamono</h3>
+              </div>
+            </div>
+
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">
+              Le mariage religieux se tiendra à <strong>Pikine, Kogn Jamono</strong> (Dakar). 
+              Le quartier est facilement accessible via la Route des Niayes ou l'Autoroute à péage (sortie Pikine).
+            </p>
+
+            <div class="space-y-2 text-xs text-gray-600 bg-rose-50/50 p-4 rounded-xl border border-rose-100 mb-6">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Repère :</strong> Mosquée Kogn Jamono / Domicile familial</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="clock" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Heure :</strong> À partir de 14h30 - 15h00</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="car" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Stationnement :</strong> Rues adjacentes sécurisées</span>
               </div>
             </div>
           </div>
 
-          <!-- Carte Itinéraire depuis Dakar -->
-          <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-xl bg-wedding-gold/20 text-wedding-emerald flex items-center justify-center shrink-0">
-                <i data-lucide="car" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <h3 class="font-serif text-lg font-bold text-gray-800">Venir depuis Dakar</h3>
-                <p class="text-xs text-gray-600 mt-1 leading-relaxed">
-                  Prendre l’autoroute à péage (A1) vers Thiès, puis la Route Nationale 2 (RN2) en direction de Saint-Louis. Compter environ 3h30 à 4h00 de route.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carte Stationnement & Sécurité -->
-          <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-xl bg-wedding-gold/20 text-wedding-emerald flex items-center justify-center shrink-0">
-                <i data-lucide="shield-check" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <h3 class="font-serif text-lg font-bold text-gray-800">Parking & Sécurité</h3>
-                <p class="text-xs text-gray-600 mt-1 leading-relaxed">
-                  Un espace de stationnement gardé et sécurisé est entièrement dédié aux invités du mariage au sein de l'établissement.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bouton Itinéraire Direct -->
-          <a href="https://maps.google.com/?q=Hotel+Keur+Dada+Saint-Louis+Senegal" target="_blank" rel="noopener noreferrer" class="btn-gold w-full py-3.5 text-xs uppercase tracking-wider font-bold">
-            <i data-lucide="navigation" class="w-4 h-4 mr-2"></i>
-            <span>Lancer l'itinéraire GPS</span>
+          <a href="https://maps.google.com/?q=Pikine+Kogn+Jamono+Dakar+Senegal" target="_blank" rel="noopener noreferrer" class="btn-outline-gold !border-wedding-bordeaux !text-wedding-bordeaux hover:!bg-wedding-bordeaux hover:!text-white w-full py-3.5 text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            <span>Localisation Pikine (Google Maps)</span>
           </a>
-
         </div>
 
+        <!-- CARTE 2 : NGAPAROU (SALY, MBOUR) (LE 28 NOV.) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-wedding-gold/50 shadow-lg flex flex-col justify-between h-full relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-wedding-bordeaux text-wedding-gold text-[10px] uppercase font-bold tracking-widest px-4 py-1 rounded-bl-xl border-l border-b border-wedding-gold/40">
+            Grande Réception
+          </div>
+
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-wedding-bordeaux text-wedding-gold flex items-center justify-center shrink-0">
+                <i data-lucide="party-popper" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider font-bold text-wedding-bordeaux">Samedi 28 Novembre • Réception</span>
+                <h3 class="font-serif text-2xl font-bold text-gray-800">Ngaparou (Saly, Mbour)</h3>
+              </div>
+            </div>
+
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">
+              La réception nuptiale se tiendra à <strong>Ngaparou</strong>, au cœur de la Petite-Côte sénégalaise, à quelques minutes de Saly Portudal et de La Somone.
+            </p>
+
+            <div class="space-y-2 text-xs text-gray-600 bg-wedding-sand p-4 rounded-xl border border-wedding-gold/25 mb-6">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Trajet depuis Dakar :</strong> ~45 min via l'Autoroute à péage A1 (sortie Sindia / Somone)</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="clock" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Heure :</strong> À partir de 17h00</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-wedding-bordeaux"></i>
+                <span><strong>Parking :</strong> Gardé et réservé aux invités</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bouton direct avec le lien Google Maps fourni par le client -->
+          <a href="https://maps.app.goo.gl/iekb62zYaPMmtC8b8?g_st=ic" target="_blank" rel="noopener noreferrer" class="btn-bordeaux w-full py-3.5 text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-2">
+            <i data-lucide="navigation" class="w-4 h-4 mr-1"></i>
+            <span>Ouvrir l'Itinéraire Ngaparou (Lien GPS Direct)</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Module Google Maps Interactif Ngaparou -->
+      <div class="map-container relative aspect-[21/9] sm:aspect-[24/9] w-full">
+        <iframe 
+          title="Localisation Réception Ngaparou Saly Mbour"
+          src="https://maps.google.com/maps?q=Ngaparou+Saly+Mbour+Senegal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          class="w-full h-full border-0" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
 
     </div>
   </section>
 
   <!-- ========================================================
-       SECTION : INFORMATIONS UTILES & DRESS CODE
+       SECTION : INFORMATIONS UTILES & DRESS CODE BLANC ET BORDEAUX
        ======================================================== -->
-  <section id="infos" class="py-24 bg-wedding-sand relative">
+  <section id="infos" class="py-24 bg-white relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs uppercase tracking-widest font-bold text-wedding-gold">Guide des Invités</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-emerald font-semibold mt-2 mb-3">
-          Informations Pratiques
+        <span class="text-xs uppercase tracking-widest font-bold text-wedding-bordeaux">Guide des Invités</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-wedding-bordeaux font-semibold mt-2 mb-3">
+          Dress Code & Recommandations
         </h2>
         <div class="section-ornament">
           <span class="ornament-line"></span>
@@ -685,41 +851,57 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Dress Code -->
-        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
-          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="sparkles" class="w-7 h-7 text-wedding-gold"></i>
+        <!-- Dress Code Blanc et Rouge Bordeaux -->
+        <div class="bg-wedding-sand p-8 rounded-2xl border-2 border-wedding-bordeaux/30 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-wedding-bordeaux text-wedding-gold flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Dress Code</h3>
-          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Élégance Royale & Teranga</p>
+          <h3 class="font-serif text-2xl font-bold text-wedding-bordeaux mb-2">Thème / Dress Code</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-bordeaux font-bold mb-3">Blanc et Rouge Bordeaux</p>
+          
+          <!-- Palette Visuelle -->
+          <div class="flex items-center justify-center space-x-3 my-4">
+            <div class="flex flex-col items-center">
+              <span class="w-8 h-8 rounded-full bg-[#780016] border-2 border-wedding-gold/60 shadow"></span>
+              <span class="text-[10px] mt-1 text-gray-600 font-semibold">Bordeaux</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="w-8 h-8 rounded-full bg-[#FFFFFF] border-2 border-gray-300 shadow"></span>
+              <span class="text-[10px] mt-1 text-gray-600 font-semibold">Blanc</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="w-8 h-8 rounded-full bg-[#D4AF37] border-2 border-wedding-goldLight shadow"></span>
+              <span class="text-[10px] mt-1 text-gray-600 font-semibold">Or (Touches)</span>
+            </div>
+          </div>
+
           <p class="text-gray-600 text-sm leading-relaxed">
-            Pour la première partie : Tenues de soirée chics et raffinées.<br>
-            À partir de minuit : Somptueux Bazin & Tenues traditionnelles sénégalaises.<br>
-            <em>Couleurs suggérées : Or, Vert Émeraude, Blanc & Champagne.</em>
+            Nous invitons chaleureusement nos convives à s'habiller aux couleurs du thème : 
+            Bazin riche blanc ou rouge bordeaux, robes de soirée et costumes élégants.
           </p>
         </div>
 
-        <!-- Hébergements à Saint-Louis -->
-        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
-          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="hotel" class="w-7 h-7 text-wedding-gold"></i>
+        <!-- Hébergements Ngaparou & Saly -->
+        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/25 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-rose-50 text-wedding-bordeaux flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hotel" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Hébergement</h3>
-          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Saint-Louis & Alentours</p>
+          <h3 class="font-serif text-2xl font-bold text-wedding-bordeaux mb-2">Hébergement</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-bordeaux font-semibold mb-3">Ngaparou, Somone & Saly</p>
           <p class="text-gray-600 text-sm leading-relaxed">
-            Des chambres sont disponibles à l'Hôtel Keur Dada ainsi que dans les charmants hôtels coloniaux de l'Île de Saint-Louis (Hôtel de la Poste, Mermoz, Cap Saint-Louis). Nous vous conseillons de réserver tôt.
+            Pour la réception du 28 à Ngaparou, de superbes villas, maisons d'hôtes et hôtels balnéaires sont situés à moins de 5 minutes. Nous vous recommandons de réserver votre nuitée sur place pour profiter de la fête sans stress de route !
           </p>
         </div>
 
-        <!-- Enfants & Organisation -->
-        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/20 shadow-md text-center">
-          <div class="w-14 h-14 rounded-full bg-wedding-gold/15 text-wedding-emerald flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="heart-handshake" class="w-7 h-7 text-wedding-gold"></i>
+        <!-- Cadeaux & Bénédictions -->
+        <div class="bg-white p-8 rounded-2xl border border-wedding-gold/25 shadow-md text-center">
+          <div class="w-14 h-14 rounded-full bg-rose-50 text-wedding-bordeaux flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="heart-handshake" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-serif text-2xl font-bold text-wedding-emerald mb-2">Cadeaux & Vœux</h3>
-          <p class="text-xs uppercase tracking-widest text-wedding-gold font-semibold mb-3">Votre Présence est un Don</p>
+          <h3 class="font-serif text-2xl font-bold text-wedding-bordeaux mb-2">Cadeaux & Vœux</h3>
+          <p class="text-xs uppercase tracking-widest text-wedding-bordeaux font-semibold mb-3">Votre Présence est un Don</p>
           <p class="text-gray-600 text-sm leading-relaxed">
-            Le plus beau des cadeaux reste votre présence et vos bénédictions. Une urne nuptiale sera élégamment disposée à l'accueil pour ceux qui désirent contribuer à notre voyage de noces.
+            Vos prières, bénédictions et votre présence à nos côtés sont nos plus précieux cadeaux. Une urne nuptiale sera à votre disposition lors de la réception pour ceux désirant contribuer au voyage de noces.
           </p>
         </div>
 
@@ -730,9 +912,8 @@
 
   <!-- ========================================================
        SECTION 5 : FORMULAIRE RSVP (MODULE DE CONFIRMATION)
-       Texte d'intro, champs obligatoires et gestion automatisée
        ======================================================== -->
-  <section id="rsvp" class="py-24 bg-wedding-emerald relative text-white">
+  <section id="rsvp" class="py-24 bg-wedding-bordeauxDeep relative text-white">
     
     <!-- Décorations lumineuses en fond -->
     <div class="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
@@ -756,8 +937,8 @@
         <p class="text-wedding-goldLight/90 text-base sm:text-lg max-w-xl mx-auto mt-4 font-light">
           « Confirmez votre présence. Merci de nous répondre pour que nous puissions prévoir votre place. »
         </p>
-        <p class="text-xs text-wedding-goldLight/60 mt-1 uppercase tracking-wider">
-          Date limite de confirmation souhaitée : 1er Novembre 2026
+        <p class="text-xs text-wedding-goldLight/70 mt-1 uppercase tracking-wider">
+          Takku Jàkka (Pikine le 27) • Réception (Ngaparou le 28)
         </p>
       </div>
 
@@ -793,7 +974,7 @@
               <div>
                 <input type="radio" id="presence-oui" name="presence" value="oui" checked class="hidden peer">
                 <label for="presence-oui" class="attendance-radio-label">
-                  <i data-lucide="check-circle" class="w-5 h-5 text-wedding-gold mr-2"></i>
+                  <i data-lucide="check-circle" class="w-5 h-5 text-wedding-bordeaux mr-2"></i>
                   <span>✨ Oui, avec grand plaisir !</span>
                 </label>
               </div>
@@ -813,6 +994,35 @@
           <!-- Bloc conditionnel si Présence = OUI -->
           <div id="plus-one-section" class="space-y-6 transition-all duration-300">
             
+            <!-- Choix des Événements (Nouveau) -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
+                À quel(s) événement(s) serez-vous présent(e) ? <span class="text-red-500">*</span>
+              </label>
+              <div class="grid grid-cols-1 gap-2.5">
+                <label class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-wedding-bordeaux cursor-pointer transition-colors bg-gray-50">
+                  <input type="radio" name="event_choice" value="les-deux" checked class="text-wedding-bordeaux focus:ring-wedding-bordeaux mr-3">
+                  <span class="text-xs font-semibold text-gray-800">
+                    👑 <strong>Aux 2 événements</strong> : Takku Jàkka (27 Nov - Pikine) & Réception (28 Nov - Ngaparou)
+                  </span>
+                </label>
+
+                <label class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-wedding-bordeaux cursor-pointer transition-colors bg-gray-50">
+                  <input type="radio" name="event_choice" value="reception" class="text-wedding-bordeaux focus:ring-wedding-bordeaux mr-3">
+                  <span class="text-xs font-semibold text-gray-800">
+                    🎉 <strong>Uniquement à la Réception</strong> (Samedi 28 Nov - Ngaparou)
+                  </span>
+                </label>
+
+                <label class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-wedding-bordeaux cursor-pointer transition-colors bg-gray-50">
+                  <input type="radio" name="event_choice" value="takku" class="text-wedding-bordeaux focus:ring-wedding-bordeaux mr-3">
+                  <span class="text-xs font-semibold text-gray-800">
+                    🕌 <strong>Uniquement au Takku Jàkka</strong> (Vendredi 27 Nov - Pikine, Kogn Jamono)
+                  </span>
+                </label>
+              </div>
+            </div>
+
             <!-- Champ 3 : Nombre d'accompagnants (Obligatoire) -->
             <div>
               <label for="nb-accompagnants" class="block text-xs uppercase font-bold tracking-wider text-gray-700 mb-2">
@@ -888,19 +1098,19 @@
               id="rsvp-message" 
               name="message" 
               rows="3" 
-              placeholder="Vos vœux de bonheur, bénédictions ou une petite chanson que vous aimeriez entendre..." 
+              placeholder="Vos vœux de bonheur, bénédictions ou félicitations..." 
               class="form-input"></textarea>
           </div>
 
           <!-- Notification WhatsApp Directe -->
-          <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-start space-x-3">
+          <div class="p-3.5 rounded-xl bg-rose-50/70 border border-rose-200 text-xs text-rose-950 flex items-start space-x-3">
             <div class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
               <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             </div>
             <div>
-              <p class="font-bold text-emerald-900">Confirmation WhatsApp Directe pour le Marié</p>
+              <p class="font-bold text-wedding-bordeaux">Notification WhatsApp Directe pour les Mariés</p>
               <p class="text-[11px] text-gray-600 mt-0.5">
-                À la validation, un message complet sera automatiquement préparé pour être transmis à <strong>Tuborg (+221 77 618 51 00)</strong> et <strong>+221 77 176 09 06</strong>.
+                À la validation, un message complet sera automatiquement préparé pour être transmis à <strong>Tuborg (+221 77 618 51 00)</strong> et au <strong>+221 77 176 09 06</strong>.
               </p>
             </div>
           </div>
@@ -910,7 +1120,7 @@
             <button 
               type="submit" 
               id="rsvp-submit-btn" 
-              class="btn-gold w-full py-4 text-base font-bold tracking-wider shadow-xl">
+              class="btn-bordeaux w-full py-4 text-base font-bold tracking-wider shadow-xl">
               <span>Confirmer ma réponse</span>
             </button>
           </div>
@@ -928,11 +1138,11 @@
   <!-- ========================================================
        PIED DE PAGE (FOOTER)
        ======================================================== -->
-  <footer class="bg-wedding-emeraldDark text-white py-16 border-t border-wedding-gold/20">
+  <footer class="bg-wedding-bordeauxDark text-white py-16 border-t border-wedding-gold/25">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <!-- Monogramme Footer -->
-      <div class="w-16 h-16 rounded-full border border-wedding-gold/40 flex items-center justify-center mx-auto mb-4 bg-wedding-gold/10">
+      <div class="w-16 h-16 rounded-full border border-wedding-gold/40 flex items-center justify-center mx-auto mb-4 bg-wedding-bordeaux shadow-lg">
         <span class="font-display font-bold text-2xl text-wedding-gold">T&Y</span>
       </div>
 
@@ -940,8 +1150,11 @@
         Tuborg & Yacine
       </h2>
 
-      <p class="text-xs uppercase tracking-widest text-wedding-gold mt-1 mb-6">
-        Samedi 28 Novembre 2026 • Hôtel Keur Dada, Saint-Louis (Sénégal)
+      <p class="text-xs uppercase tracking-widest text-wedding-gold mt-1 mb-2 font-semibold">
+        Le 27 Nov. : Takku Jàkka (Pikine) • Le 28 Nov. : Réception (Ngaparou)
+      </p>
+      <p class="text-xs text-white/70 mb-6 font-medium">
+        Thème Officiel : Blanc et Rouge Bordeaux
       </p>
 
       <div class="section-ornament">
@@ -951,7 +1164,7 @@
       </div>
 
       <p class="font-script text-3xl text-wedding-goldLight/90 mt-4">
-        « Nioune Ak Yéne, Ndar thi Kaw ! »
+        « Bismillah, Nioune Ak Yéne ba fàw ! »
       </p>
 
       <p class="text-xs text-gray-400 mt-8">
@@ -963,7 +1176,7 @@
 
   <!-- ========================================================
        SECTION 2 : LECTEUR AUDIO FLOTTANT (AMBIANCE SONORE)
-       Morceau : "Daman Bannex" (de la troupe Obree Daman)
+       Morceau : "Obree Daman - Banneex"
        ======================================================== -->
   <aside class="audio-player-pill" aria-label="Lecteur audio d'ambiance musicale">
     
@@ -990,7 +1203,7 @@
 
     <!-- Boutons de Contrôle : Play / Pause & Mute -->
     <div class="flex items-center space-x-1 pl-1">
-      <button id="audio-play-btn" class="w-8 h-8 rounded-full bg-wedding-gold text-wedding-emerald flex items-center justify-center hover:scale-105 transition-transform" aria-label="Lancer la musique">
+      <button id="audio-play-btn" class="w-8 h-8 rounded-full bg-wedding-gold text-wedding-bordeaux flex items-center justify-center hover:scale-105 transition-transform" aria-label="Lancer la musique">
         <i data-lucide="play" id="play-icon" class="w-4 h-4 fill-current ml-0.5"></i>
         <i data-lucide="pause" id="pause-icon" class="w-4 h-4 fill-current hidden"></i>
       </button>
@@ -1015,7 +1228,7 @@
           Souhaitez-vous écouter la musique traditionnelle d'accueil <strong>« Obree Daman - Banneex »</strong> ?
         </p>
         <div class="mt-3 flex items-center space-x-3">
-          <button id="accept-music-btn" class="px-4 py-1.5 rounded-full bg-wedding-gold text-wedding-emerald font-bold text-xs hover:bg-white transition-colors">
+          <button id="accept-music-btn" class="px-4 py-1.5 rounded-full bg-wedding-gold text-wedding-bordeaux font-bold text-xs hover:bg-white transition-colors">
             Oui, écouter 🎵
           </button>
           <button id="close-music-toast-btn" class="text-xs text-gray-400 hover:text-white transition-colors">
@@ -1034,19 +1247,19 @@
   <!-- ========================================================
        MODAL DE SUCCÈS RSVP (CONFIRMATION FESTIVE)
        ======================================================== -->
-  <div id="rsvp-success-modal" class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-md">
+  <div id="rsvp-success-modal" class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-4 bg-black/65 backdrop-blur-md">
     <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl border border-wedding-gold/40 relative transform transition-all animate-bounce-short">
       
       <!-- Icône festive dorée -->
-      <div class="w-20 h-20 rounded-full bg-wedding-gold/15 text-wedding-gold border-2 border-wedding-gold flex items-center justify-center mx-auto mb-4 shadow-lg">
+      <div class="w-20 h-20 rounded-full bg-rose-50 text-wedding-bordeaux border-2 border-wedding-bordeaux flex items-center justify-center mx-auto mb-4 shadow-lg">
         <i data-lucide="heart" class="w-10 h-10 fill-current"></i>
       </div>
 
-      <h3 class="font-serif text-3xl font-bold text-wedding-emerald">
+      <h3 class="font-serif text-3xl font-bold text-wedding-bordeaux">
         Merci infiniment !
       </h3>
       
-      <p class="font-serif italic text-lg text-wedding-gold mt-1" id="success-guest-name">
+      <p class="font-serif italic text-lg text-wedding-goldDark mt-1" id="success-guest-name">
         Votre réponse a bien été enregistrée
       </p>
 
@@ -1055,13 +1268,13 @@
       </div>
 
       <!-- Bloc Transmission WhatsApp Directe -->
-      <div class="my-5 p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 text-left">
-        <p class="text-xs uppercase tracking-wider text-emerald-950 font-bold mb-1.5 flex items-center space-x-1.5">
+      <div class="my-5 p-4 rounded-2xl bg-rose-50/70 border border-rose-200/80 text-left">
+        <p class="text-xs uppercase tracking-wider text-rose-950 font-bold mb-1.5 flex items-center space-x-1.5">
           <svg class="w-4 h-4 fill-[#25D366] shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Transmettre votre confirmation par WhatsApp :</span>
         </p>
         <p class="text-[11px] text-gray-600 mb-3">
-          Le message complet est déjà prêt, il ne vous reste qu'à cliquer pour l'envoyer directement :
+          Le message complet est déjà prêt avec le choix de vos événements, cliquez pour l'envoyer directement :
         </p>
         <div class="space-y-2">
           <a id="whatsapp-btn-groom" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full py-2.5 px-3 text-xs font-bold shadow-sm flex items-center justify-center space-x-2">
@@ -1076,7 +1289,7 @@
       </div>
 
       <div class="space-y-3 pt-2">
-        <a href="#" onclick="downloadICalFile(); return false;" class="btn-gold w-full py-3 text-xs uppercase tracking-wider font-bold">
+        <a href="#" onclick="downloadICalFile(); return false;" class="btn-bordeaux w-full py-3 text-xs uppercase tracking-wider font-bold">
           <i data-lucide="calendar-check" class="w-4 h-4 mr-1.5"></i>
           <span>Enregistrer dans mon calendrier</span>
         </a>
@@ -1096,7 +1309,7 @@
     <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden border border-wedding-gold/40">
       
       <!-- Header Admin -->
-      <div class="px-6 py-4 bg-wedding-emerald text-white flex items-center justify-between">
+      <div class="px-6 py-4 bg-wedding-bordeaux text-white flex items-center justify-between">
         <div class="flex items-center space-x-3">
           <i data-lucide="users" class="w-5 h-5 text-wedding-gold"></i>
           <div>

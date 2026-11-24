@@ -43,14 +43,15 @@ function doPost(e) {
         "Horodatage",
         "Nom & Prénom",
         "Présence",
+        "Événement(s) choisi(s)",
         "Nombre d'accompagnants",
         "Noms des accompagnants",
         "Téléphone / WhatsApp",
         "Régime alimentaire",
         "Message aux Mariés"
       ]);
-      // Mise en forme de la première ligne
-      sheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#D4AF37").setFontColor("#FFFFFF");
+      // Mise en forme de la première ligne (Rouge Bordeaux & Or)
+      sheet.getRange(1, 1, 1, 9).setFontWeight("bold").setBackground("#780016").setFontColor("#FFFFFF");
       sheet.setFrozenRows(1);
     }
 
@@ -68,6 +69,7 @@ function doPost(e) {
       formattedDate,
       data.nomComplet || "",
       data.presence || "",
+      data.evenementChoisi || "",
       data.nombreAccompagnants !== undefined ? data.nombreAccompagnants : 0,
       data.nomsAccompagnants || "",
       data.telephone || "",

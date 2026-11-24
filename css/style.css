@@ -1,27 +1,30 @@
 /* ========================================================
    Mariage Tuborg & Yacine - Style & Design Haute Couture
-   Couleurs : Or Impérial, Vert Émeraude, Ivoire Chaud & Champagne
+   Thème Officiel : Blanc & Rouge Bordeaux (Accents Or Royal)
    ======================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
+  --color-bordeaux: #780016;
+  --color-bordeaux-dark: #4A000E;
+  --color-bordeaux-light: #9E1B32;
+  --color-bordeaux-gradient: linear-gradient(135deg, #9E1B32 0%, #780016 50%, #4A000E 100%);
+  --color-bordeaux-text-gradient: linear-gradient(135deg, #B22234 0%, #780016 50%, #4A000E 100%);
+
+  --color-white: #FFFFFF;
+  --color-bg-ivory: #FAF7F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-alt: #F8F3F1;
+
   --color-gold: #D4AF37;
   --color-gold-light: #F3E5AB;
   --color-gold-dark: #A67C1E;
   --color-gold-gradient: linear-gradient(135deg, #ECC875 0%, #D4AF37 50%, #9C7A28 100%);
   --color-gold-text-gradient: linear-gradient(135deg, #F5D77F 0%, #D4AF37 40%, #B8860B 100%);
   
-  --color-emerald: #0F382A;
-  --color-emerald-dark: #092219;
-  --color-emerald-light: #18523E;
-  
-  --color-bg-ivory: #FAF8F5;
-  --color-bg-card: #FFFFFF;
-  --color-bg-card-alt: #F6F2EB;
-  
-  --color-text-main: #24292E;
-  --color-text-muted: #6A737D;
+  --color-text-main: #2A1F21;
+  --color-text-muted: #6B5B5E;
   --color-text-light: #FAF8F5;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -29,8 +32,9 @@
   --font-script: 'Alex Brush', cursive;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   
+  --shadow-bordeaux: 0 10px 30px -10px rgba(120, 0, 22, 0.35);
   --shadow-gold: 0 10px 30px -10px rgba(212, 175, 55, 0.35);
-  --shadow-card: 0 15px 35px -5px rgba(15, 56, 42, 0.08), 0 5px 15px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 15px 35px -5px rgba(74, 0, 14, 0.08), 0 5px 15px rgba(0, 0, 0, 0.03);
 }
 
 /* Global Reset & Base */
@@ -66,16 +70,26 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-bordeaux-gradient {
+  background: var(--color-bordeaux-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-gold {
   color: var(--color-gold);
 }
 
-.bg-emerald-deep {
-  background-color: var(--color-emerald);
+.text-bordeaux {
+  color: var(--color-bordeaux);
 }
 
-.bg-emerald-dark {
-  background-color: var(--color-emerald-dark);
+.bg-bordeaux-deep {
+  background-color: var(--color-bordeaux);
+}
+
+.bg-bordeaux-dark {
+  background-color: var(--color-bordeaux-dark);
 }
 
 /* Navigation Bar */
@@ -118,16 +132,40 @@ body {
 .hero-overlay {
   background: linear-gradient(
     180deg,
-    rgba(9, 34, 25, 0.55) 0%,
-    rgba(9, 34, 25, 0.72) 50%,
-    rgba(9, 34, 25, 0.90) 100%
+    rgba(74, 0, 14, 0.58) 0%,
+    rgba(74, 0, 14, 0.74) 50%,
+    rgba(40, 0, 8, 0.93) 100%
   );
+}
+
+/* Luxury Bordeaux & Gold Buttons */
+.btn-bordeaux {
+  background: var(--color-bordeaux-gradient);
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px -10px rgba(120, 0, 22, 0.45);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-bordeaux:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px -5px rgba(120, 0, 22, 0.65);
+  color: #FFFFFF;
 }
 
 /* Luxury Gold Button */
 .btn-gold {
   background: var(--color-gold-gradient);
-  color: #0E2F24;
+  color: #4A000E;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -156,7 +194,7 @@ body {
 .btn-gold:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 35px -5px rgba(212, 175, 55, 0.5);
-  color: #061B14;
+  color: #2D0008;
 }
 
 .btn-gold:hover::after {
@@ -226,11 +264,11 @@ body {
   bottom: 24px;
   right: 24px;
   z-index: 999;
-  background: rgba(14, 47, 36, 0.92);
+  background: rgba(74, 0, 14, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 15px rgba(212, 175, 55, 0.2);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 15px rgba(120, 0, 22, 0.4);
   border-radius: 9999px;
   padding: 8px 16px;
   display: flex;
@@ -241,9 +279,9 @@ body {
 }
 
 .audio-player-pill:hover {
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(212, 175, 55, 0.5);
   transform: translateY(-2px);
-  border-color: rgba(212, 175, 55, 0.8);
+  border-color: rgba(212, 175, 55, 0.9);
 }
 
 /* Vinyl spinning icon */
@@ -364,7 +402,7 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #0E2F24;
+  background: #780016;
   border: 2px solid var(--color-gold);
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
   display: flex;
@@ -394,7 +432,7 @@ body {
   background: #FFFFFF;
   border-radius: 1.25rem;
   padding: 24px 28px;
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  border: 1px solid rgba(120, 0, 22, 0.15);
   box-shadow: var(--shadow-card);
   position: relative;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -402,8 +440,8 @@ body {
 
 .timeline-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -10px rgba(15, 56, 42, 0.12), 0 0 15px rgba(212, 175, 55, 0.2);
-  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 20px 40px -10px rgba(120, 0, 22, 0.15), 0 0 15px rgba(212, 175, 55, 0.2);
+  border-color: rgba(120, 0, 22, 0.4);
 }
 
 .timeline-item.left .timeline-card {
@@ -428,8 +466,8 @@ body {
 .rsvp-card {
   background: #FFFFFF;
   border-radius: 1.75rem;
-  border: 1.5px solid rgba(212, 175, 55, 0.35);
-  box-shadow: 0 25px 60px -15px rgba(14, 47, 36, 0.12);
+  border: 1.5px solid rgba(120, 0, 22, 0.25);
+  box-shadow: 0 25px 60px -15px rgba(74, 0, 14, 0.18);
   position: relative;
   overflow: hidden;
 }
@@ -441,7 +479,7 @@ body {
   left: 0;
   right: 0;
   height: 6px;
-  background: var(--color-gold-gradient);
+  background: linear-gradient(90deg, #780016 0%, #D4AF37 50%, #780016 100%);
 }
 
 .form-input {
@@ -457,9 +495,9 @@ body {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--color-gold);
+  border-color: var(--color-bordeaux);
   background-color: #FFFFFF;
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 0 4px rgba(120, 0, 22, 0.12);
 }
 
 /* Radio Choice Cards */
@@ -479,10 +517,10 @@ body {
 }
 
 input[type="radio"]:checked + .attendance-radio-label {
-  border-color: var(--color-gold);
-  background: rgba(212, 175, 55, 0.1);
-  color: #0E2F24;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+  border-color: var(--color-bordeaux);
+  background: rgba(120, 0, 22, 0.08);
+  color: #780016;
+  box-shadow: 0 4px 15px rgba(120, 0, 22, 0.18);
 }
 
 /* Map frame luxury border */
@@ -490,7 +528,7 @@ input[type="radio"]:checked + .attendance-radio-label {
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: var(--shadow-card);
-  border: 2px solid rgba(212, 175, 55, 0.3);
+  border: 2px solid rgba(120, 0, 22, 0.2);
 }
 
 /* Prompt Banner / Toast */
@@ -499,11 +537,45 @@ input[type="radio"]:checked + .attendance-radio-label {
   bottom: 84px;
   right: 24px;
   max-width: 340px;
-  background: rgba(14, 47, 36, 0.95);
+  background: rgba(74, 0, 14, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   color: #FFFFFF;
   padding: 16px 20px;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  animation: slideInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Photo Gallery Grid */
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 2px solid rgba(120, 0, 22, 0.15);
+  box-shadow: var(--shadow-card);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #FFF;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.photo-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-bordeaux);
+  box-shadow: 0 20px 35px -10px rgba(120, 0, 22, 0.3);
+}
+
+.photo-card:hover img {
+  transform: scale(1.06);
+}
   border-radius: 1.25rem;
   border: 1px solid rgba(212, 175, 55, 0.4);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);

@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ========================================================
    1. Compte à Rebours (Countdown)
-   Date cible : 28 Novembre 2026 à 17:00:00 (GMT / Sénégal)
+   Date cible : 27 Novembre 2026 à 15:00:00 (Takku Jàkka - Pikine)
    ======================================================== */
 function initCountdown() {
-  const targetDate = new Date('2026-11-28T17:00:00Z').getTime();
+  const targetDate = new Date('2026-11-27T15:00:00Z').getTime();
 
   const daysEl = document.getElementById('count-days');
   const hoursEl = document.getElementById('count-hours');
@@ -36,7 +36,7 @@ function initCountdown() {
       minutesEl.textContent = '00';
       secondsEl.textContent = '00';
       const titleEl = document.getElementById('countdown-title');
-      if (titleEl) titleEl.textContent = "C'est le grand jour ! Bienvenue à notre mariage !";
+      if (titleEl) titleEl.textContent = "C'est le grand jour ! Bienvenue aux célébrations de notre mariage !";
       return;
     }
 
@@ -248,12 +248,12 @@ function initCalendarGenerator() {
   const gcalBtn = document.getElementById('btn-add-gcal');
   const icalBtn = document.getElementById('btn-download-ics');
 
-  const eventTitle = encodeURIComponent("Mariage de Tuborg & Yacine");
-  const eventDesc = encodeURIComponent("Célébration du mariage de Tuborg & Yacine à l'Hôtel Keur Dada, Saint-Louis, Sénégal.\nProgramme : Cérémonie, Dîner, Danses & Soirée festive.");
-  const eventLocation = encodeURIComponent("Hôtel Keur Dada, Saint-Louis, Sénégal");
+  const eventTitle = encodeURIComponent("Mariage de Tuborg & Yacine (Takku Jàkka & Réception)");
+  const eventDesc = encodeURIComponent("Célébration du mariage de Tuborg & Yacine.\n\n• Vendredi 27 Nov 2026 : Takku Jàkka (mariage religieux) à Pikine, Kogn Jamono.\n• Samedi 28 Nov 2026 : Réception festive à Ngaparou (Saly, Mbour).\n\nThème / Dress Code : Blanc et Rouge Bordeaux.");
+  const eventLocation = encodeURIComponent("Pikine (Kogn Jamono) & Ngaparou (Saly, Mbour), Sénégal");
   
-  // 28 Nov 2026 de 17:00 à 03:00 (GMT)
-  const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${eventTitle}&dates=20261128T170000Z/20261129T030000Z&details=${eventDesc}&location=${eventLocation}`;
+  // Du 27 Nov 15h00 au 29 Nov 03h00 (GMT)
+  const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${eventTitle}&dates=20261127T150000Z/20261129T030000Z&details=${eventDesc}&location=${eventLocation}`;
 
   if (gcalBtn) {
     gcalBtn.href = gcalUrl;
@@ -276,13 +276,13 @@ function downloadICalFile() {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    'UID:mariage-tuborg-yacine-20261128@saintlouis',
-    'DTSTAMP:20261115T000000Z',
-    'DTSTART:20261128T170000Z',
+    'UID:mariage-tuborg-yacine-20261127@pikine-ngaparou',
+    'DTSTAMP:20261124T000000Z',
+    'DTSTART:20261127T150000Z',
     'DTEND:20261129T030000Z',
-    'SUMMARY:Mariage de Tuborg & Yacine',
-    'DESCRIPTION:Célébration de l\'union de Tuborg et Yacine à l\'Hôtel Keur Dada, Saint-Louis, Sénégal. Cérémonie, dîner et festivités.',
-    'LOCATION:Hôtel Keur Dada, Saint-Louis, Sénégal',
+    'SUMMARY:Mariage de Tuborg & Yacine (Takku Jàkka & Réception)',
+    'DESCRIPTION:Célébration de l\'union de Tuborg et Yacine.\\nVendredi 27 Nov : Takku Jàkka à Pikine (Kogn Jamono).\\nSamedi 28 Nov : Réception à Ngaparou (Saly, Mbour).\\nThème : Blanc et Rouge Bordeaux.',
+    'LOCATION:Pikine (Kogn Jamono) & Ngaparou (Saly, Mbour), Sénégal',
     'STATUS:CONFIRMED',
     'END:VEVENT',
     'END:VCALENDAR'
